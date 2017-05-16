@@ -4,15 +4,44 @@
 @charset 'utf-8';
 
 @import 'index';
+@import 'page';
 
 * {
-	font-weight: normal;
+	color: #1b1b1b;
 	font-family: 'Aleo', 'Times New Roman', serif;
+	font-size: 18px;
+	font-weight: normal;
+
 	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: #212121;
+}
+
+a:hover {
+	color: #878787;
 }
 
 p {
 	margin: 0;
+	margin-bottom: 1em;
+}
+
+h1 {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: 700;
+	margin-bottom: 0.3em;
 }
 
 html, body {
