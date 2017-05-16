@@ -14,9 +14,11 @@ Black Highlighter works with your favorite apps to hide text from anywhere.
 
 ### Workflow
 
-Black Highlighter supports the <a href="http://x-callback-url.com">X-Callback-URL</a> scheme to be called from within Workflow.
+Black Highlighter supports the [X-Callback-URL](http://x-callback-url.com) scheme to be called from within Workflow.
 
-<a href="#">Highlight Last Screenshot</a> is an example workflow that finds the last screenshot that was taken on your iPhone or iPad and opens it in Black Highlighter.
+[Highlight Last Screenshot](#) is an example workflow that finds the last screenshot that was taken on your iPhone or iPad and opens it in Black Highlighter.
+
+Check our our [page on Workflow integration](/workflow) for more in-depth integration help.
 
 ## Release Notes
 
