@@ -20,6 +20,6 @@ Check our our [page on Workflow integration](/workflow) for more in-depth integr
 
 ## Release Notes
 
-### 1.0 &mdash; June 4th, 2017
+### 1.0 &mdash; Coming Soon!
 
 Initial app release.
