@@ -10,11 +10,9 @@ Black Highlighter makes it easy to hide text in images you want to share. Black 
 
 Black Highlighter works with your favorite apps to hide text from anywhere.
 
-### Photo Editing
-
 ### Workflow
 
-Black Highlighter supports the [X-Callback-URL](http://x-callback-url.com) scheme to be called from within Workflow.
+Black Highlighter supports the [X-Callback-URL](http://x-callback-url.com) scheme to perform actions from within workflows built in the [Workflow](http://workflow.is) app.
 
 [Highlight Last Screenshot](#) is an example workflow that finds the last screenshot that was taken on your iPhone or iPad and opens it in Black Highlighter.
 
