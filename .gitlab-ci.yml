@@ -1,0 +1,21 @@
+stages:
+  - build
+  - deploy
+before_script:
+  - "bundle install --path vendor/bundle"
+variables:
+  LC_ALL: "en_US.UTF-8"
+  LANG: "en_US.UTF-8"
+build:
+  stage: build
+  artifacts:
+    paths:
+      - _site
+  script:
+    - "bundle exec jekyll build"
+deploy:
+  dependencies: [build]
+  stage: deploy
+  script: "rsync -avz -e \"ssh -i ~/.ssh/site_deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null\" --progress _site/ deploy@cocoatype.com:/srv/www/highlighter"
+  only:
+    - master
