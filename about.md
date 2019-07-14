@@ -24,6 +24,22 @@ Black Highlighter keeps your private information private. More information is av
 
 ## Release Notes
 
+### 2019.2 &mdash; 2019-07-09
+
+You can now use Black Highlighter's editing tools from inside other apps as an action. Try it out in the Photos app!
+
+Other changes:
+
+- Fixed a crash that could happen if you got too creative with your photo library while Black Highlighter was open.
+- Added some keyboard shortcuts to the editing view; you can now undo and redo redactions with the standard shortcuts.
+
+### 2019.1 &mdash; 2019-06-26
+
+- Black Highlighter now supports hiding text in ALL photos, not just screenshots.
+- New visualization makes it easier to find text for hiding.
+- Manual (non-automatic) redaction now has full control, not just straight lines. Scribble away!
+- Drag and drop support on iPad. Drag any photo into Highlighter to edit it.
+
 ### 1.1 &mdash; 2018-11-26
 
 - Fixed manual redactions not working… like, at all. Oops.
