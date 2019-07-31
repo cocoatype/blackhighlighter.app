@@ -1,0 +1,9 @@
+{
+    "baseURL": "https://highlighter.cocoatype.com/",
+    "languageCode": "en-us",
+    "title": "My New Hugo Site",
+    "theme": "highlighter",
+    "params": {
+        "description": "Black Highlighter makes it easy to hide text in images you want to share."
+    }
+}

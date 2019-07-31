@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Shortcuts Integration
-permalink: /shortcuts/
 ---
 
 Black Highlighter supports integration with Apple's free [Shortcuts](http://workflow.is/) app to support advanced image workflows. It uses the [X-Callback-URL scheme](http://x-callback-url.com) to open Highlighter from a shortcut and to use the resulting image further down the line.

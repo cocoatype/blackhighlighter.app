@@ -1,0 +1,14 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-itunes-app" content="app-id=1215283742">
+
+    <title>{{.Title}}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+
+    {{ $styleOptions := (dict "includePaths" (slice "assets/_sass")) }}
+    {{ $style := resources.Get "main.scss" | resources.ToCSS $styleOptions }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+</head>

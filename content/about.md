@@ -1,7 +1,5 @@
 ---
-layout: page
-title: About Black Highlighter
-permalink: /about/
+title: "About Black Highlighter"
 ---
 
 Black Highlighter makes it easy to hide text in images you want to share. Black Highlighter's "Magic Highlighting" feature automatically detects text in images and helps you make nice, even redactions in your photos and screenshots.

@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Workflow Integration
-permalink: /workflow/
 ---
 
 Black Highlighter supports integration with Apple's free [Workflow](http://workflow.is/) app to support advanced image workflows. It uses the [X-Callback-URL scheme](http://x-callback-url.com) to open Highlighter from a workflow and to use the resulting image further down the line.

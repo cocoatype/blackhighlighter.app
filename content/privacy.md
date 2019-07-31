@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Privacy Policy
-permalink: /privacy/
 ---
 
 Black Highlighter is all about keeping private stuff private. It wouldn’t be very nice of me to go and undo all of that by stealing your personal data behind your back. Black Highlighter shares as little information as possible to do its job. More information is below:

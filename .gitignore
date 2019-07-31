@@ -4,3 +4,15 @@ _site
 .DS_Store
 .bundle/
 vendor
+### https://raw.github.com/github/gitignore/50e42aa1064d004a5c99eaa72a2d8054a0d8de55/community/Golang/Hugo.gitignore
+
+# Generated files by hugo
+/public/
+/resources/_gen/
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+
