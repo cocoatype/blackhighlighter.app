@@ -13,4 +13,10 @@ article {
             grid-column-end: span 12;
         }
     }
+
+    .post-header {
+        h1 {
+            margin-top: 0;
+        }
+    }
 }
