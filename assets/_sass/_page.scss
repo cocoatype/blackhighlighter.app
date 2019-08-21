@@ -19,4 +19,8 @@ article {
             margin-top: 0;
         }
     }
+
+    @media screen and (max-width: 480px) {
+        padding: 0 20px;
+    }
 }

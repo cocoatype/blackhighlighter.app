@@ -16,9 +16,6 @@ a {
 
 code {
     font-weight: 300;
-    display: block;
-    position: relative;
-    width: 100%;
 }
 
 p {
@@ -40,4 +37,9 @@ h3 {
     font-size: 1em;
     font-weight: 700;
     margin-bottom: 0.3em;
+}
+
+::selection {
+    background: $light-text;
+    color: $light-text;
 }
