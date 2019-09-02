@@ -8,12 +8,12 @@ build:
   stage: build
   artifacts:
     paths:
-      - _site
+      - public
   script:
     - "hugo"
 deploy:
   dependencies: [build]
   stage: deploy
-  script: "rsync -avz -e \"ssh -i ~/.ssh/site_deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null\" --progress public/ deploy@cocoatype.com:/srv/www/highlighter"
+  script: "hugo; rsync -avz -e \"ssh -i ~/.ssh/site_deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null\" --progress public/ deploy@cocoatype.com:/srv/www/highlighter"
   only:
     - master
