@@ -1,0 +1,26 @@
+article {
+    max-width: 38rem;
+    margin: auto;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .post-header, .post-content {
+        grid-column-start: 1;
+        grid-column-end: span 8;
+
+        @media screen and (max-width: 480px) {
+            grid-column-end: span 12;
+        }
+    }
+
+    .post-header {
+        h1 {
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,74 @@
+.index-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 3em;
+    max-width: 38rem;
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column-reverse;
+    }
+
+    .screenshot {
+	width: 260px;
+	height: 512px;
+    }
+
+    .logo {
+	width: 296px;
+	height: 115px;
+        margin-bottom: 2em;
+
+        img {
+            width: 325px;
+            height: 130px;
+            margin-left: -9px;
+            margin-top: 2px;
+
+            @media screen and (max-width: 480px) {
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            width: 280px;
+            height: 112px;
+        }
+    }
+
+    .appstore {
+	width: 202px;
+	height: 60px;
+        margin-top: 3em;
+
+        @media screen and (max-width: 480px) {
+            margin-top: 1.5rem;
+        }
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+        width: 296px;
+        
+        p {
+            margin: 0;
+        }
+    }
+
+
+    .hero {
+        margin-left: 3em;
+        
+        @media screen and (max-width: 480px) {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "baseURL": "https://blackhighlighter.app/",
+    "languageCode": "en-us",
+    "title": "Black Highlighter",
+    "theme": "highlighter",
+    "params": {
+        "description": "Black Highlighter makes it easy to hide text in images you want to share."
+    }
+}
