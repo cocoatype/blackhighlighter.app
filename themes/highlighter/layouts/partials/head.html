@@ -9,6 +9,6 @@
 
     {{ $styleOptions := (dict "includePaths" (slice "assets/_sass")) }}
     {{ $style := resources.Get "main.scss" | resources.ToCSS $styleOptions }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     <link rel="canonical" href="{{ .Permalink }}">
 </head>
