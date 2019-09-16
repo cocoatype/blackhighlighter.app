@@ -22,13 +22,4 @@ Black Highlighter keeps your private information private. More information is av
 
 ## Latest Release
 
-### 2019.2 &mdash; 2019-07-09
-
-You can now use Black Highlighter's editing tools from inside other apps as an action. Try it out in the Photos app!
-
-Other changes:
-
-- Fixed a crash that could happen if you got too creative with your photo library while Black Highlighter was open.
-- Added some keyboard shortcuts to the editing view; you can now undo and redo redactions with the standard shortcuts.
-
-Past release notes are available on our [release notes page](/releases).
+{{< latestRelease >}}
