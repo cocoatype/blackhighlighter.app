@@ -1,74 +1,209 @@
+$border-width: 0px;
+
 .index-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 960px;
+    border: $border-width solid $border;
     margin: auto;
-    margin-top: 3em;
-    max-width: 38rem;
 
-    @media screen and (max-width: 480px) {
-        flex-direction: column-reverse;
-    }
+    .hero {
+        display: flex;
 
-    .screenshot {
-	width: 260px;
-	height: 512px;
-    }
+        .pitch {
+            border: $border-width solid $border;
+            width: 37.5%;
+            margin-right: 21px;
 
-    .logo {
-	width: 296px;
-	height: 115px;
-        margin-bottom: 2em;
+            h1 {
+                font-size: 48px;
+                line-height: 1.1em;
+                color: $header;
+            }
 
-        img {
-            width: 325px;
-            height: 130px;
-            margin-left: -9px;
-            margin-top: 2px;
-
-            @media screen and (max-width: 480px) {
-                width: 100%;
-                height: auto;
-                margin: 0;
+            p {
+                font-size: 21px;
+                line-height: 1.3em;
+                color: $header;
             }
         }
 
-        @media screen and (max-width: 480px) {
-            margin-top: 1.5rem;
-            margin-bottom: 1.5rem;
-            width: 280px;
-            height: 112px;
+        .video {
+            width: 62.5%;
+            background: black;
+            border: $border-width solid $border;
         }
     }
 
-    .appstore {
-	width: 202px;
-	height: 60px;
-        margin-top: 3em;
+    .bubble-container {
+        margin-top: 160px;
 
-        @media screen and (max-width: 480px) {
-            margin-top: 1.5rem;
+        .bubble {
+            display: flex;
+            margin: 80px;
+            background: $bubble-background;
+            border: $border-width solid $border;
+    
+            border-radius: 21px;
+    
+            .image {
+                flex: 1;
+                border: $border-width solid $border;
+                margin: 21px;
+
+                #screenshot {
+                    width: 100%;
+                    height: 100%;
+
+                    background-image: url("images/screenshot.png");
+                    background-size: 100%;
+                }
+            }
+    
+            .text {
+                width: 400px;
+                margin: 21px 21px 21px 0px;
+                border: $border-width solid $border;
+
+                h2 {
+                    font-size: 30px;
+                    margin-top: 0px;
+                    margin-bottom: 12px;
+                    color: $header;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.3em;
+                }
+
+                .appstore {
+                    display: flex;
+                    img {
+                        margin-right: 12px;
+                    }
+                }
+            }
         }
     }
 
-    .description {
+    .feature-container {
         display: flex;
-        flex-direction: column;
+        width: 100%;
+        border: $border-width solid $border;
+        justify-content: center;
 
-        height: 100%;
-        width: 296px;
-        
-        p {
-            margin: 0;
+        .feature {
+            display: flex;
+            width: 800px;
+            margin: 80px 0;
+            border: $border-width solid $border;
+    
+            .image {
+                flex: 1;
+                border: $border-width solid $border;
+            }
+    
+            .text {
+                width: 400px;
+                margin: 21px;
+                border: $border-width solid $border;
+
+                h3 {
+                    font-size: 30px;
+                    margin-top: 0px;
+                    color: $header;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.3em;
+                    margin: 0px;
+                    margin-top: 12px;
+
+                    small {
+                        font-size: 12px;
+                        line-height: 1.5em;
+                        margin: 0px;
+                    }
+                }
+            }
         }
     }
-
-
-    .hero {
-        margin-left: 3em;
-        
-        @media screen and (max-width: 480px) {
-            margin: 0;
-        }
+    
+    .feature-container:nth-of-type(even) {
+      .feature {
+        flex-direction: row-reverse;
+      }
     }
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // margin: auto;
+    // margin-top: 3em;
+    // max-width: 38rem;
+
+    // @media screen and (max-width: 480px) {
+    //     flex-direction: column-reverse;
+    // }
+
+    // .screenshot {
+	// width: 260px;
+	// height: 512px;
+    // }
+
+    // .logo {
+	// width: 296px;
+	// height: 115px;
+    //     margin-bottom: 2em;
+
+    //     img {
+    //         width: 325px;
+    //         height: 130px;
+    //         margin-left: -9px;
+    //         margin-top: 2px;
+
+    //         @media screen and (max-width: 480px) {
+    //             width: 100%;
+    //             height: auto;
+    //             margin: 0;
+    //         }
+    //     }
+
+    //     @media screen and (max-width: 480px) {
+    //         margin-top: 1.5rem;
+    //         margin-bottom: 1.5rem;
+    //         width: 280px;
+    //         height: 112px;
+    //     }
+    // }
+
+    // .appstore {
+	// width: 202px;
+	// height: 60px;
+    //     margin-top: 3em;
+
+    //     @media screen and (max-width: 480px) {
+    //         margin-top: 1.5rem;
+    //     }
+    // }
+
+    // .description {
+    //     display: flex;
+    //     flex-direction: column;
+
+    //     height: 100%;
+    //     width: 296px;
+        
+    //     p {
+    //         margin: 0;
+    //     }
+    // }
+
+
+    // .hero {
+    //     margin-left: 3em;
+        
+    //     @media screen and (max-width: 480px) {
+    //         margin: 0;
+    //     }
+    // }
 }
