@@ -5,6 +5,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
 
     span {
         display: block;
@@ -23,7 +24,7 @@ footer {
         align-self: flex-end;
         text-align: right;
         a {
-            margin-left: 6px;
+            margin-left: 10px;
         }
 
         // @include phone {
@@ -33,7 +34,7 @@ footer {
 }
 
 #footer-content {
-    width: 512px;
+    width: 758px;
     display: flex;
     justify-content: space-between;
 
