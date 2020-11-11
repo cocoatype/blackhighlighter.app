@@ -96,18 +96,25 @@ $border-width: 0px;
 
         .feature {
             display: flex;
+            justify-content: space-between;
             width: 800px;
             margin: 80px 0;
             border: $border-width solid $border;
     
             .image {
-                flex: 1;
+                height: 284px;
+                width: 379px;
                 border: $border-width solid $border;
+                background: black;
+                border-radius: 21px;
             }
     
             .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 width: 400px;
-                margin: 21px;
+                // margin: 21px;
                 border: $border-width solid $border;
 
                 h3 {
