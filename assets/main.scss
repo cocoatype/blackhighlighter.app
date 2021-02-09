@@ -2,23 +2,19 @@
 
 @import 'aleo-webfont';
 @import 'color';
+@import 'footer';
 @import 'index';
 @import 'header';
 @import 'page';
 @import 'type';
 
 html {
-    background-color: $light-background;
-    color: $light-text;
+    background-color: $background;
+    color: $text;
     font-family: 'Aleo', 'Times New Roman', serif;
     font-size: 18px;
 
     -webkit-font-smoothing: antialiased;
-
-    @media (prefers-color-scheme: dark) {
-        background-color: $dark-background;
-        color: $dark-text;
-    }
 }
 
 html, body {
