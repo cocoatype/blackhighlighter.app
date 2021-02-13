@@ -58,3 +58,33 @@ Redact paper documents with the document scanner. It uses the same document scan
 [Developer Website](https://cocoatype.com)
 
 ## Screenshots & Graphics
+
+### App Store Screenshots
+
+{{< press/gallery class="mac" >}}
+{{< press/mac thumb="mas-a" href="Mac Screenshot A" >}}
+{{< press/mac thumb="mas-b" href="Mac Screenshot B" >}}
+{{< press/mac thumb="mas-c" href="Mac Screenshot C" >}}
+{{< press/mac thumb="mas-d" href="Mac Screenshot D" >}}
+{{< /press/gallery >}}
+
+### Mac Desktop Screenshots
+
+{{< press/gallery class="mac" >}}
+{{< press/mac thumb="clean-thumb" href="Clean" >}}
+{{< press/mac thumb="manual-redact-thumb" href="Manual Redacted" >}}
+{{< press/mac thumb="auto-redact-thumb" href="Auto Redacted" >}}
+{{< press/mac thumb="color-redact-thumb" href="Color Redacted" >}}
+{{< /press/gallery >}}
+
+### iOS Unframed Screenshots
+
+Coming soon. [Contact me](mailto:hello@cocoatype.com) for images.
+
+### iPad Unframed Screenshots
+
+Coming soon. [Contact me](mailto:hello@cocoatype.com) for images.
+
+### App Icon
+
+{{< press/icon thumb="icon-thumb" href="App Icon" >}}

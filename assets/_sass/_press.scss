@@ -1,0 +1,31 @@
+@import 'mixins';
+
+.mac-press-gallery {
+    display: grid;
+    margin-top: 8px;
+    gap: 8px 8px;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+
+    @include phone {
+        grid-template-columns: auto;
+    }
+}
+
+.mac-press-image {
+    border-radius: 8px;
+    margin: 0;
+
+    img {
+        border-radius: 8px;
+    }
+}
+
+.icon-press-image {
+    border-radius: 8px;
+    margin: 0;
+
+    img {
+        border-radius: 8px;
+    }
+}
