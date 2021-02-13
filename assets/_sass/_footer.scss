@@ -1,3 +1,5 @@
+@import 'mixins';
+
 footer {
     background: $background;
     width: 100%;
@@ -27,21 +29,21 @@ footer {
             margin-left: 10px;
         }
 
-        // @include phone {
-        //     align-self: center;
-        // }
+        @include phone {
+            align-self: center;
+        }
     }
 }
 
 #footer-content {
-    width: 758px;
+    width: 512px;
     display: flex;
     justify-content: space-between;
 
-    // @include phone {
-    //     width: calc(100vw - 24px);
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+    @include phone {
+        width: calc(100vw - 24px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
