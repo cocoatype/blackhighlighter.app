@@ -1,0 +1,60 @@
+---
+title: Press Kit
+---
+
+## Download Everything
+
+If you'd like to save this press kit for later or just find it more convenient to have everything all in one, you can [download it here](/press.zip). If you have any questions about the app, need more information, or just want to chat, please [reach out](mailto:hello@cocoatype.com)!
+
+## About Black Highlighter
+
+Black Highlighter makes it easy to hide text you don’t want to share in images you’re going to share anyway.
+
+Using machine learning, Black Highlighter locates text in images and makes it simple to redact text quickly and evenly every single time.
+
+## Quick Facts
+
+**Developer**  
+Indie developer Geoff Pado, under the name [Cocoatype](https://cocoatype.com).
+
+**Release Date**  
+May 31st, 2017.
+
+**Supported Platforms**  
+iOS and iPadOS 13.0, and macOS 11.0.
+
+**Price**  
+Free to download, $2.99 [in-app purchase](#in-app-purchase) to unlock advanced features.
+
+## Key Features
+
+**Magic Highlighter**  
+The Magic Highlighter snaps to and completely covers any text it sees. This makes redactions look neater, while making it harder to guess what lies underneath due to oddly-shaped letters.
+
+**Color Picker**  
+Redaction colors let you differentiate between different types of hidden text, such as the names of different speakers in a chat thread.
+
+**Cross-Platform**  
+Cross-platform support for macOS and iOS lets you use Black Highlighter wherever is most appropriate.
+
+## In-App Purchase
+
+Some advanced features of Black Highlighter require a one-time $2.99 in-app purchase.
+
+**Automatic Redaction**  
+Automatic redaction lets you specify words and phrases to automatically redact every time you open an image. Black Highlighter will scan your text for these words and automatically hide them, making repeated redactions a breeze.
+
+**Workflow Integration**  
+Black Highlighter integrates with Automator on macOS and Shortcuts on iOS to allow you to build advanced redaction workflows. Pass in an image and a set of words to redact, and Black Highlighter supplies you with a redacted image.
+
+**Document Scanner**  
+Redact paper documents with the document scanner. It uses the same document scanning technology used in Apple Notes to automatically crop, scale, and adjust documents, preparing them for redaction in Black Highlighter.
+
+## Links
+
+[Website](https://blackhighlighter.app)  
+[App Store](https://itunes.apple.com/us/app/black-highlighter/id1215283742?ls=1&mt=8&at=11lrHm)  
+[Privacy Policy](https://blackhighlighter.app/privacy)  
+[Developer Website](https://cocoatype.com)
+
+## Screenshots & Graphics
