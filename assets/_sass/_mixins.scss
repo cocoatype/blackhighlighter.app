@@ -1,0 +1,11 @@
+@mixin dark() {
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+}
+
+@mixin phone() {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
