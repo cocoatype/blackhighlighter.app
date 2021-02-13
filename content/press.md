@@ -18,7 +18,7 @@ Using machine learning, Black Highlighter locates text in images and makes it si
 Indie developer Geoff Pado, under the name [Cocoatype](https://cocoatype.com).
 
 **Release Date**  
-May 31st, 2017.
+May 31st, 2017 on iOS and iPadOS. February 8th, 2021 on macOS.
 
 **Supported Platforms**  
 iOS and iPadOS 13.0, and macOS 11.0.
@@ -55,6 +55,7 @@ Redact paper documents with the document scanner. It uses the same document scan
 [Website](https://blackhighlighter.app)  
 [App Store](https://itunes.apple.com/us/app/black-highlighter/id1215283742?ls=1&mt=8&at=11lrHm)  
 [Privacy Policy](https://blackhighlighter.app/privacy)  
+[Release History](https://blackhighlighter.app/releases)  
 [Developer Website](https://cocoatype.com)
 
 ## Screenshots & Graphics
