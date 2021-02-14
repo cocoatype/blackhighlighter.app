@@ -27,8 +27,13 @@
 .press-image {
     border-radius: 8px;
     margin: 0;
+    padding: 0;
+
+    a { margin: 0; }
 
     img {
+        border: 3px solid $bubble-background;
         border-radius: 8px;
+        margin: 0;
     }
 }
