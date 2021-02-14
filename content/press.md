@@ -69,6 +69,21 @@ Redact paper documents with the document scanner. It uses the same document scan
 {{< press/mac thumb="mas-d" href="Mac Screenshot D" >}}
 {{< /press/gallery >}}
 
+{{< press/gallery class="ios" >}}
+{{< press/ios thumb="ios-a" href="iOS Screenshot A" >}}
+{{< press/ios thumb="ios-b" href="iOS Screenshot B" >}}
+{{< press/ios thumb="ios-c" href="iOS Screenshot C" >}}
+{{< press/ios thumb="ios-d" href="iOS Screenshot D" >}}
+{{< press/ios thumb="ios-e" href="iOS Screenshot E" >}}
+{{< /press/gallery >}}
+
+{{< press/gallery class="ipad" >}}
+{{< press/ipad thumb="ipad-a" href="iPad Screenshot A" >}}
+{{< press/ipad thumb="ipad-b" href="iPad Screenshot B" >}}
+{{< press/ipad thumb="ipad-c" href="iPad Screenshot C" >}}
+{{< press/ipad thumb="ipad-d" href="iPad Screenshot D" >}}
+{{< /press/gallery >}}
+
 ### Mac Desktop Screenshots
 
 {{< press/gallery class="mac" >}}

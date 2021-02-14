@@ -1,6 +1,6 @@
 @import 'mixins';
 
-.mac-press-gallery {
+.mac-press-gallery, .ipad-press-gallery {
     display: grid;
     margin-top: 8px;
     gap: 8px 8px;
@@ -12,16 +12,19 @@
     }
 }
 
-.mac-press-image {
-    border-radius: 8px;
-    margin: 0;
+.ios-press-gallery {
+    display: grid;
+    margin-top: 24px;
+    gap: 8px 8px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
 
-    img {
-        border-radius: 8px;
+    @include phone {
+        grid-template-columns: auto;
     }
 }
 
-.icon-press-image {
+.press-image {
     border-radius: 8px;
     margin: 0;
 
