@@ -6,9 +6,6 @@ variables:
   LANG: "en_US.UTF-8"
 build:
   stage: build
-  artifacts:
-    paths:
-      - public
   script:
     - "hugo"
 deploy:
