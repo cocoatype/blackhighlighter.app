@@ -21,6 +21,6 @@ Apple may (depending on your preferences) collect some analytics about your use 
 
 ## Other Information
 
-This privacy policy might change over time. A [full change history](https://git.pado.name/highlighter/site/commits/deploy/privacy.md) is available.
+This privacy policy might change over time. A [full change history](https://git.pado.name/highlighter/site/-/commits/deploy/content/privacy.md) is available.
 
 If you have any questions about anything on this page, or have some other concern, [send me an e-mail](mailto:hello@cocoatype.com).
