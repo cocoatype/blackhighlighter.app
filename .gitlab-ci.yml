@@ -13,4 +13,4 @@ deploy:
   stage: deploy
   script: "hugo; rsync -avz -e \"ssh -i ~/.ssh/site_deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null\" --progress public/ deploy@cocoatype.com:/srv/www/highlighter"
   only:
-    - master
+    - deploy
