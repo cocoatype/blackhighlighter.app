@@ -10,6 +10,10 @@ If you visit the Black Highlighter website (this website!) using a web browser, 
 
 I basically never look at these logs, but they’re useful for diagnosing issues, and can be used to watch for trends such as where new users are being referred from. These logs are deleted automatically after two weeks.
 
+## Crash Reports
+
+If you experience a crash or some other major error while using the Black Highlighter app, an error report with some limited diagnostic information is sent to the Black Highlighter developers. This data includes your device model, current OS version, and current version of Black Highlighter. It does **not** include any personal data, anything you were working on, anything that can be used to identify a single user, etc. This data stays entirely on our servers, and is never shared with any third parties.
+
 ## Customer Support
 
 If you [e-mail me](mailto:hello@cocoatype.com), I have the contents of that e-mail and the address that it came from. I generally keep these e-mails forever because it helps identify problems that multiple customers have had, and so I can send updates if your issue is addressed. If you’d rather I not keep your e-mails, just let me know, and they’ll be deleted when our conversation is finished.
