@@ -1,0 +1,236 @@
+@import 'mixins';
+@import 'color';
+
+$border-width: 0px;
+
+:root {
+    --content-width: 929px;
+
+    --section-margin: 8rem;
+    --image-height: 284px;
+    --image-width: 379px;
+    --image-corner-radius: 21px;
+    --feature-spacing: 4em;
+    --line-height: 1.5;
+    --overlap: 6em;
+
+    @include phone {
+        --content-width: calc(100vw - 24px);
+        --feature-spacing: 2em;
+        --image-height: 240px;
+        --image-width: 320px;
+        --section-margin: 6rem;
+    }
+
+    @include tablet {
+        --content-width: calc(100vw - 24px);
+        --feature-spacing: 2em;
+    }
+}
+
+.index-content {
+    width: 100%;
+    border: $border-width solid $border;
+    margin: auto;
+
+    display: grid;
+    gap: var(--section-margin);
+    justify-items: center;
+
+    section {
+        width: var(--content-width);
+    }
+
+    .hero {
+        display: flex;
+
+        .pitch {
+            margin-top: 80px;
+            border: $border-width solid $border;
+            width: 100%;
+            margin-right: 21px;
+
+            h1 {
+                font-size: 48px;
+                line-height: 1.4em;
+                color: $header;
+                text-align: center;
+                margin: 0;
+            }
+
+            p {
+                font-size: 21px;
+                line-height: 1.3em;
+                color: $header;
+                text-align: center;
+            }
+        }
+    }
+
+    .bubble-container {
+        display: grid;
+        justify-items: center;
+        background: $bubble-background;
+        width: 100%;
+        margin-bottom: calc(var(--overlap) * 0.5);
+
+        .bubble {
+            width: var(--content-width);
+            display: grid;
+            margin-top: 2em;
+            margin-bottom: calc(var(--overlap) * -1);
+            justify-items: center;
+            align-items: center;
+            grid-template-areas: "image text";
+            gap: 0;
+
+            @include phone {
+                grid-template-areas: "text" "image";
+                align-items: start;
+                gap: 2em;
+            }
+
+            @include tablet {
+                grid-template-areas: "text" "image";
+                // align-items: start;
+                gap: 4em;
+            }
+
+            .image {
+                flex: 1;
+                border: $border-width solid $border;
+                margin: 0px;
+                grid-area: image;
+
+                #screenshot {
+                    width: 260px;
+                    height: 513px;
+                    margin: auto;
+
+                    background-image: url("images/screenshot.png");
+                    background-size: 100%;
+                    border: $border-width solid $border;
+
+                    @include phone {
+                        // background-image: linear-gradient(to top, rgba($bubble-background, 1), rgba($bubble-background, 0) 20%), url("images/screenshot.png");
+                    }
+                }
+            }
+
+            .text {
+                display: grid;
+                margin-top: calc(calc(var(--overlap) * -1) - 2em);
+                border: $border-width solid $border;
+                grid-area: text;
+                gap: 1em;
+
+                @include phone {
+                    width: 320px;
+                    text-align: center;
+                }
+
+                @include tablet {
+                    margin-top: 1em;
+                    text-align: center;
+                }
+
+                h2 {
+                    font-size: 48px;
+                    margin: 0;
+                    color: $header;
+
+                    @include phone {
+                        font-size: 30px;
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 1.3em;
+                    margin: 0;
+                }
+
+                a {
+                    font-weight: 700;
+                    margin: 0;
+                }
+
+                .appstore {
+                    display: flex;
+                    img {
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .feature-container {
+        width: var(--content-width);
+
+        .feature {
+            display: grid;
+            width: var(--content-width);
+            gap: var(--feature-spacing);
+            justify-content: space-between;
+            justify-items: center;
+            align-items: center;
+            grid-template-areas: "text image";
+
+            .image {
+                grid-area: image;
+                height: var(--image-height);
+                width: var(--image-width);
+                background: black;
+                border-radius: var(--image-corner-radius);
+
+                box-shadow: 0px 0px 6px 2px $footer-background;
+
+                img {
+                    border-radius: var(--image-corner-radius);
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .text {
+                grid-area: text;
+                display: grid;
+                gap: 1em;
+
+                h3 {
+                    font-size: 36px;
+                    margin-top: 0px;
+                    color: $header;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: var(--line-height);
+                    margin: 0px;
+                }
+
+                small {
+                    font-size: 12px;
+                    line-height: 1.5em;
+                    margin: 0;
+                }
+            }
+
+            @include phone {
+                align-items: center;
+                grid-template-areas: "image" "text";
+            }
+        }
+    }
+    
+    .feature-container:nth-of-type(even) {
+        .feature {
+            grid-template-areas: "image text";
+
+            @include phone {
+                grid-template-areas: "image" "text";
+            }
+        }
+    }
+}

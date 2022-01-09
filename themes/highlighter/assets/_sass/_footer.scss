@@ -1,13 +1,14 @@
 @import 'mixins';
 
 footer {
-    background: $background;
+    background: $footer-background;
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
+    margin-top: 4em;
 
     span {
         display: block;
