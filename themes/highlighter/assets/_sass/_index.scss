@@ -1,14 +1,44 @@
 @import 'mixins';
+@import 'color';
 
 $border-width: 0px;
 
+:root {
+    --content-width: 929px;
+
+    --section-margin: 8rem;
+    --image-height: 284px;
+    --image-width: 379px;
+    --image-corner-radius: 21px;
+    --feature-spacing: 4em;
+    --line-height: 1.5;
+    --overlap: 6em;
+
+    @include phone {
+        --content-width: calc(100vw - 24px);
+        --feature-spacing: 2em;
+        --image-height: 240px;
+        --image-width: 320px;
+        --section-margin: 6rem;
+    }
+
+    @include tablet {
+        --content-width: calc(100vw - 24px);
+        --feature-spacing: 2em;
+    }
+}
+
 .index-content {
-    width: 744px;
+    width: 100%;
     border: $border-width solid $border;
     margin: auto;
 
-    @include phone {
-        width: 100vw;
+    display: grid;
+    gap: var(--section-margin);
+    justify-items: center;
+
+    section {
+        width: var(--content-width);
     }
 
     .hero {
@@ -38,71 +68,91 @@ $border-width: 0px;
     }
 
     .bubble-container {
-        margin-top: 80px;
-
-        @include phone {
-            margin-top: 40px;
-        }
+        display: grid;
+        justify-items: center;
+        background: $bubble-background;
+        width: 100%;
+        margin-bottom: calc(var(--overlap) * 0.5);
 
         .bubble {
-            display: flex;
-            margin-bottom: 60px;
-            background: $bubble-background;
-            border: $border-width solid $border;
-    
-            border-radius: 21px;
+            width: var(--content-width);
+            display: grid;
+            margin-top: 2em;
+            margin-bottom: calc(var(--overlap) * -1);
+            justify-items: center;
+            align-items: center;
+            grid-template-areas: "image text";
+            gap: 0;
 
             @include phone {
-                flex-direction: column;
-                align-items: center;
+                grid-template-areas: "text" "image";
+                align-items: start;
+                gap: 2em;
             }
-    
+
+            @include tablet {
+                grid-template-areas: "text" "image";
+                // align-items: start;
+                gap: 4em;
+            }
+
             .image {
                 flex: 1;
                 border: $border-width solid $border;
-                margin: 21px;
-                margin-bottom: 0px;
-
-                @include phone {
-                    margin: 21px 0 0 0;
-                    height: 260px;
-                }
+                margin: 0px;
+                grid-area: image;
 
                 #screenshot {
                     width: 260px;
-                    height: 100%;
+                    height: 513px;
                     margin: auto;
-                    
+
                     background-image: url("images/screenshot.png");
                     background-size: 100%;
                     border: $border-width solid $border;
 
                     @include phone {
-                        background-image: linear-gradient(to top, rgba($bubble-background, 1), rgba($bubble-background, 0) 20%), url("images/screenshot.png");
+                        // background-image: linear-gradient(to top, rgba($bubble-background, 1), rgba($bubble-background, 0) 20%), url("images/screenshot.png");
                     }
                 }
             }
-    
+
             .text {
-                width: 400px;
-                margin: 21px 21px 21px 0px;
+                display: grid;
+                margin-top: calc(calc(var(--overlap) * -1) - 2em);
                 border: $border-width solid $border;
+                grid-area: text;
+                gap: 1em;
 
                 @include phone {
-                    margin: 21px 0px;
                     width: 320px;
+                    text-align: center;
+                }
+
+                @include tablet {
+                    margin-top: 1em;
+                    text-align: center;
                 }
 
                 h2 {
-                    font-size: 30px;
-                    margin-top: 0px;
-                    margin-bottom: 12px;
+                    font-size: 48px;
+                    margin: 0;
                     color: $header;
+
+                    @include phone {
+                        font-size: 30px;
+                    }
                 }
 
                 p {
-                    font-size: 18px;
+                    font-size: 20px;
                     line-height: 1.3em;
+                    margin: 0;
+                }
+
+                a {
+                    font-weight: 700;
+                    margin: 0;
                 }
 
                 .appstore {
@@ -116,107 +166,71 @@ $border-width: 0px;
     }
 
     .feature-container {
-        display: flex;
-        width: 100%;
-        border: $border-width solid $border;
-        justify-content: center;
-
-        @include phone {
-            align-items: center;
-        }
+        width: var(--content-width);
 
         .feature {
-            display: flex;
+            display: grid;
+            width: var(--content-width);
+            gap: var(--feature-spacing);
             justify-content: space-between;
-            width: 744px;
-            margin: 40px 0;
-            border: $border-width solid $border;
+            justify-items: center;
+            align-items: center;
+            grid-template-areas: "text image";
 
-            .spacer {
-                width: 21px;
-                border: $border-width solid $border;
-            }
-    
             .image {
-                height: 284px;
-                width: 379px;
-                border: $border-width solid $border;
+                grid-area: image;
+                height: var(--image-height);
+                width: var(--image-width);
                 background: black;
-                border-radius: 21px;
+                border-radius: var(--image-corner-radius);
 
-                @include phone {
-                    width: 320px;
-                    height: 240px;
-                }
+                box-shadow: 0px 0px 6px 2px $footer-background;
 
                 img {
-                    border-radius: 21px;
+                    border-radius: var(--image-corner-radius);
                     width: 100%;
                     height: 100%;
-                }
-
-                div {
-                    width: 100%;
-                    height: 100%;
-                    margin: 0px;
-
-                    background-size: 100%;
-                    border: $border-width solid $border;
                 }
             }
-    
-            .text {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 380px;
-                // margin: 21px;
-                border: $border-width solid $border;
 
-                @include phone {
-                    width: 320px;
-                    margin-top: 21px;
-                }
+            .text {
+                grid-area: text;
+                display: grid;
+                gap: 1em;
 
                 h3 {
-                    font-size: 30px;
+                    font-size: 36px;
                     margin-top: 0px;
                     color: $header;
                 }
 
                 p {
-                    font-size: 18px;
-                    line-height: 1.3em;
+                    font-size: 20px;
+                    line-height: var(--line-height);
                     margin: 0px;
-                    margin-top: 12px;
+                }
 
-                    @include phone {
-                        margin-top: 3px;
-                    }
-
-                    small {
-                        font-size: 12px;
-                        line-height: 1.5em;
-                        margin: 0px;
-                    }
+                small {
+                    font-size: 12px;
+                    line-height: 1.5em;
+                    margin: 0;
                 }
             }
 
             @include phone {
-                width: calc(100vw - 24px);
                 align-items: center;
-                flex-direction: column;
+                grid-template-areas: "image" "text";
             }
         }
     }
     
     .feature-container:nth-of-type(even) {
-      .feature {
-        flex-direction: row-reverse;
+        .feature {
+            grid-template-areas: "image text";
 
-        @include phone {
-            flex-direction: column;
+            @include phone {
+                grid-template-areas: "image" "text";
+            }
         }
-      }
     }
 }
