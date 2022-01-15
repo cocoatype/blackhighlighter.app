@@ -22,14 +22,14 @@
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:title" content="{{ .Scratch.Get "title" }}">
     <meta property="og:description" content="{{ .Site.Params.description }}">
-    <meta property="og:image" content="/images/meta.png">
+    <meta property="og:image" content="{{ "images/meta.png" | absURL }}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ .Permalink }}">
     <meta property="twitter:title" content="{{ .Scratch.Get "title" }}">
     <meta property="twitter:description" content="{{ .Site.Params.description }}">
-    <meta property="twitter:image" content="/images/meta.png">
+    <meta property="twitter:image" content="{{ "images/meta.png" | absURL }}">
 
     {{ $styleOptions := (dict "includePaths" (slice "assets/_sass")) }}
     {{ $style := resources.Get "main.scss" | resources.ToCSS $styleOptions }}
