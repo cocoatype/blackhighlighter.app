@@ -1,9 +1,16 @@
 {
-    "baseURL": "https://blackhighlighter.app/",
-    "languageCode": "en-us",
-    "title": "Black Highlighter",
-    "theme": "highlighter",
-    "params": {
-        "description": "Black Highlighter helps you hide text in photos and screenshots. Available on iPhone, iPad and Mac."
+  "baseURL": "https://blackhighlighter.app/",
+  "languageCode": "en-us",
+  "title": "Black Highlighter",
+  "theme": "highlighter",
+  "params": {
+    "description": "Black Highlighter helps you hide text in photos and screenshots. Available on iPhone, iPad and Mac."
+  },
+  "markup": {
+    "goldmark": {
+      "renderer": {
+        "unsafe": true
+      }
     }
+  }
 }
