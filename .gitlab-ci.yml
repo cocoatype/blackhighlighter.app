@@ -11,6 +11,6 @@ build:
 deploy:
   dependencies: [build]
   stage: deploy
-  script: "hugo; rsync -avz -e \"ssh -i ~/.ssh/site_deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null\" --progress public/ deploy@cocoatype.com:/srv/www/highlighter"
+  script: "hugo; rsync -avz -e \"ssh -i ~/.ssh/site_deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null\" --progress public/ deploy@hetzner:/srv/www/highlighter"
   only:
     - deploy
