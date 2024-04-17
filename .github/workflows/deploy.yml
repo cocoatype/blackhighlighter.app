@@ -1,0 +1,42 @@
+name: "Deploy"
+on:
+  push:
+    branches:
+      - "deploy"
+
+jobs:
+  build:
+    name: "Build Site"
+    runs-on: "ubuntu-22.04"
+    steps:
+      - name: "Checkout Repo"
+        uses: "actions/checkout@v4"
+
+      - name: "Run Hugo"
+        uses: "./.github/actions/hugo-build"
+
+      - name: "Artifact Built Site"
+        uses: "actions/upload-artifact@v4"
+        with:
+          name: "Built Site"
+          path: "public"
+          if-no-files-found: "error"
+
+  publish:
+    name: "Publish Site"
+    runs-on: "ubuntu-22.04"
+    needs: "build"
+    steps:
+      - name: "Download Built Site"
+        uses: "actions/download-artifact@v4"
+        with:
+          name: "Built Site"
+          path: "public"
+
+      - name: "Save Deploy Key"
+        run: "echo -n \"$DEPLOY_KEY\" > deploy_key && chmod 700 deploy_key"
+        env:
+          DEPLOY_KEY: ${{ secrets.HETZNER_DEPLOY_KEY }}
+
+      - name: "Publish Built Site"
+        run: "rsync -avz -e \"ssh -i ./deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null\" --progress public/ deploy@5.161.79.225:/srv/www/highlighter"

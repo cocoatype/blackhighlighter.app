@@ -1,0 +1,14 @@
+name: "Pull Request"
+on:
+  pull_request:
+
+jobs:
+  build:
+    name: "Build Site"
+    runs-on: "ubuntu-22.04"
+    steps:
+      - name: "Checkout Repo"
+        uses: "actions/checkout@v4"
+
+      - name: "Run Hugo"
+        uses: "./.github/actions/hugo-build"
