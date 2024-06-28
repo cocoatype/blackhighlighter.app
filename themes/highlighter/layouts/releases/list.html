@@ -5,8 +5,10 @@
         </div>
         <div class="post-content">
             {{ range .Pages }}
-                <h2>{{ .Title }} &mdash; {{ dateFormat "January 2, 2006" .Date }}</h2>
+            <section>
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }} &mdash; {{ dateFormat "January 2, 2006" .Date }}</a></h2>
                 {{ .Content }}
+            </section>
             {{ end }}
         </div>
     </article>
