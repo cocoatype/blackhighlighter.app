@@ -1,5 +1,5 @@
 article {
-    margin-top: 80px;
+    margin: 5em 0em;
     width: 512px;
     flex: 1;
 
@@ -12,4 +12,9 @@ article {
 
 section {
     margin-bottom: 3rem;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
+
