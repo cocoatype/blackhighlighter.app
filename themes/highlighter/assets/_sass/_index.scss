@@ -32,6 +32,7 @@ $border-width: 0px;
     width: 100%;
     border: $border-width solid $border;
     margin: auto;
+    margin-bottom: 4em;
 
     display: grid;
     gap: var(--section-margin);
