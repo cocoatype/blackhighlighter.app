@@ -7,7 +7,7 @@
             {{ range .Pages }}
             <section>
                 <h2><a href="{{ .RelPermalink }}">{{ .Title }} &mdash; {{ dateFormat "January 2, 2006" .Date }}</a></h2>
-                {{ .Content }}
+                <p>{{ .Summary }}</p>
             </section>
             {{ end }}
         </div>
