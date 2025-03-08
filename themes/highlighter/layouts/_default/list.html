@@ -5,8 +5,14 @@
         </div>
         <div class="post-content">
             {{ range .Pages }}
+            <section>
                 <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                {{ .Summary }}
+                {{ if and (isset .Params "summary") (ne .Params.Summary "") }}
+                    <p>{{ .Params.Summary | markdownify }}</p>
+                {{ else }}
+                    {{ .Summary }}
+                {{ end }}
+            </section>
             {{ end }}
         </div>
     </article>

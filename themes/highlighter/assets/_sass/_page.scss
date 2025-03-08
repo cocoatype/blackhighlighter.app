@@ -1,17 +1,16 @@
 article {
-    margin: 5em 0em;
-    width: 512px;
+    margin: 5rem 1rem;
+    max-width: 42rem;
     flex: 1;
 
     @include phone {
-        margin-top: 40px;
-        width: calc(100vw - 24px);
-        padding: 0px 12px;
+        margin-top: 2.5rem;
+        margin: 2.5rem 0.75rem;
     }
 }
 
 section {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     
     &:last-child {
         margin-bottom: 0;

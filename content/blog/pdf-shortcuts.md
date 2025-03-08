@@ -1,7 +1,10 @@
 ---
 title: "Supporting PDFs Using Shortcuts"
 date: "2019-09-08"
-summary: "I recently got a support request from someone looking to edit PDFs with Black Highlighter. Black Highlighter unfortunately doesn't currently support redacting PDFs. However, that doesn't mean that all hope is lost if you want to black out the information in PDFs… as long as you're willing to export it as a different file format."
+summary: |
+    I recently got a support request from someone looking to edit PDFs with Black Highlighter. Black Highlighter unfortunately doesn't currently support redacting PDFs.
+
+    However, that doesn't mean that all hope is lost if you want to black out the information in PDFs… as long as you're willing to export it as a different file format.
 ---
 
 I recently got a support request from someone looking to edit PDFs with Black Highlighter. Black Highlighter unfortunately doesn't currently support redacting PDFs. PDFs are much more difficult to redact correctly than simple images; there have been [several high-profile cases](https://slate.com/technology/2016/06/house-democrats-improperly-redacted-documents-wrong-but-they-re-not-alone.html) where incorrectly-redacted PDFs have led to leaked secrets. However, that doesn't mean that all hope is lost if you want to black out the information in PDFs… as long as you're willing to export it as a different file format.
