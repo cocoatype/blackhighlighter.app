@@ -1,7 +1,7 @@
 ---
 title: "Legacy Support for iOS and macOS Versions"
 date: "2024-06-02"
-summary: 'Starting with Black Highlighter 24.1, some versions of Apple&apos;s operating systems are considered to be under "legacy support".'
+summary: Starting with Black Highlighter 24.1, some versions of Apple’s operating systems are considered to be under "legacy support".
 ---
 
 Starting with Black Highlighter 24.1, some versions of Apple's operating systems (iOS/iPadOS 14.x and 15.x, and macOS 12.x) are considered to be under "legacy support". This means:
