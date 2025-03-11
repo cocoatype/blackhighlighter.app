@@ -7,7 +7,7 @@ With the release of Black Highlighter 25.0, you may notice a change to the prici
 
 <!--more-->
 
-If you've been using Black Highlighter for a while, you may be familiar with the Ultra Highlighter upgrade that adds powerful features such as automatic redaction, document scanning, and Shortcuts support. If you've ever considered upgrading to Ultra Highlighter, now's your best chance: you'll be able to get it at the existing price for two more weeks, until [DATE].
+If you've been using Black Highlighter for a while, you may be familiar with the Ultra Highlighter upgrade that adds powerful features such as automatic redaction, document scanning, and Shortcuts support. If you've ever considered upgrading to Ultra Highlighter, now's your best chance: you'll be able to get it at the existing price for two more weeks, until March 25, 2025.
 
 Going forward, Black Highlighter now has three options for upgrading to Ultra Highlighter (prices are in USD, but adjust according to your local App Store):
 
@@ -15,7 +15,7 @@ Going forward, Black Highlighter now has three options for upgrading to Ultra Hi
 - **$4.99 per year**, a savings of over 60% compared to the monthly option.
 - **$19.99 once**, for those who prefer to avoid auto-renewing subscriptions.
 
-All of these options provide access to the same exact set of Ultra Highlighter features; the different options are all about what you find most convenient. As a token of gratitude for those of you who've kept up with Black Highlighter for a while, the one-time purchase is on sale for the same $4.99 price it was previously until [DATE]. And to reiterate: if you already have the Ultra Highlighter upgrade from a past purchase, that's still honored and nothing will change. Thank you greatly for your past support.
+All of these options provide access to the same exact set of Ultra Highlighter features; the different options are all about what you find most convenient. As a token of gratitude for those of you who've kept up with Black Highlighter for a while, the one-time purchase is on sale for the same $4.99 price it was previously until March 25, 2025. And to reiterate: if you already have the Ultra Highlighter upgrade from a past purchase, that's still honored and nothing will change. Thank you greatly for your past support.
 
 I know that a change in pricing like this is going to be surprising, so let me share a bit about why it’s happening. Black Highlighter started as a personal passion project. As such, it’s always been an app where I've had more ideas for how to expand and improve it than the free time needed to actually build those ideas. This updated pricing helps with that situation. It’s not about funding any particular new features, but about creating a sustainable foundation that allows me to work full-time on Black Highlighter for years to come.
 
@@ -41,4 +41,4 @@ I welcome any comments or questions about these changes. Please reach out via e-
 
 **Why is the one-time purchase price increasing?** A one-time purchase price of $4.99 was nice when Black Highlighter was a small side project, but it wasn't sustainable long term. The new price better reflects what it takes to bring Black Highlighter to you.
 
-**When exactly do these changes take effect?** The ongoing subscription options are available now. The new one-time purchase price will go into effect on [DATE].
+**When exactly do these changes take effect?** The ongoing subscription options are available now. The new one-time purchase price will go into effect on March 25, 2025.
