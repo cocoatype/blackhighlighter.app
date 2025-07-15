@@ -6,29 +6,38 @@
     <meta name="theme-color" content="#1B1B1B">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
-    {{ if (eq .Title "") }}
-        {{ .Scratch.Set "title" .Site.Title }}
+    {{ $pageTitle := "" }}
+    {{ if .IsHome }}
+        {{ $pageTitle = site.Title }}
     {{ else }}
-        {{ .Scratch.Set "title" (print .Site.Title " | " .Title) }}
+        {{ $pageTitle = printf "%s | %s" .Title site.Title }}
     {{ end }}
 
-    <title>{{ .Scratch.Get "title" }}</title>
+    <title>{{ $pageTitle }}</title>
 
-    <meta name="title" content="{{ .Scratch.Get "title" }}">
-    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="title" content="{{ $pageTitle }}">
+
+    {{ $pageDescription := "" }}
+    {{ if .Params.summary }}
+        {{ $pageDescription = .Params.summary }}
+    {{ else if .Site.Params.Description }}
+        {{ $pageDescription = .Site.Params.Description }}
+    {{ end }}
+
+    <meta name="description" content="{{ $pageDescription }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ .Permalink }}">
-    <meta property="og:title" content="{{ .Scratch.Get "title" }}">
-    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:title" content="{{ $pageTitle }}">
+    <meta property="og:description" content="{{ $pageDescription }}">
     <meta property="og:image" content="{{ "images/meta.png" | absURL }}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ .Permalink }}">
-    <meta property="twitter:title" content="{{ .Scratch.Get "title" }}">
-    <meta property="twitter:description" content="{{ .Site.Params.description }}">
+    <meta property="twitter:title" content="{{ $pageTitle }}">
+    <meta property="twitter:description" content="{{ $pageDescription }}">
     <meta property="twitter:image" content="{{ "images/meta.png" | absURL }}">
 
     {{ $styleOptions := (dict "includePaths" (slice "assets/_sass")) }}
