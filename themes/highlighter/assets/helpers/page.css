@@ -1,12 +1,7 @@
 article {
-    margin: 5rem 1rem;
+    margin: --phone(2.5rem 0.75rem, 5rem 1rem);
     max-width: 42rem;
     flex: 1;
-
-    @include phone {
-        margin-top: 2.5rem;
-        margin: 2.5rem 0.75rem;
-    }
 }
 
 section {

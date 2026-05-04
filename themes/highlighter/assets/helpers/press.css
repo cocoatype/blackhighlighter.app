@@ -1,27 +1,19 @@
-@import 'mixins';
+@import 'mixins.css';
 
 .mac-press-gallery, .ipad-press-gallery {
     display: grid;
     margin-top: 8px;
     gap: 8px 8px;
-    grid-template-columns: auto auto;
+    grid-template-columns: --phone(auto, auto auto);
     justify-content: space-evenly;
-
-    @include phone {
-        grid-template-columns: auto;
-    }
 }
 
 .ios-press-gallery {
     display: grid;
     margin-top: 24px;
     gap: 8px 8px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: --phone(auto, auto auto auto);
     justify-content: space-evenly;
-
-    @include phone {
-        grid-template-columns: auto;
-    }
 }
 
 .press-image {

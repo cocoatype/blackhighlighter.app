@@ -1,36 +1,22 @@
-@import 'mixins';
-@import 'color';
-
-$border-width: 0px;
+@import 'mixins.css';
+@import 'color.css';
 
 :root {
-    --content-width: 929px;
+    --border-width: 0px;
+    --content-width: --phone-tablet(calc(100vw - 24px), calc(100vw - 24px), 929px);
 
-    --section-margin: 8rem;
-    --image-height: 284px;
-    --image-width: 379px;
+    --section-margin: --phone(6rem, 8rem);
+    --image-height: --phone(240px, 284px);
+    --image-width: --phone(320px, 379px);
     --image-corner-radius: 21px;
-    --feature-spacing: 4em;
+    --feature-spacing: --phone-tablet(2em, 2em, 4em);
     --line-height: 1.5;
     --overlap: 6em;
-
-    @include phone {
-        --content-width: calc(100vw - 24px);
-        --feature-spacing: 2em;
-        --image-height: 240px;
-        --image-width: 320px;
-        --section-margin: 6rem;
-    }
-
-    @include tablet {
-        --content-width: calc(100vw - 24px);
-        --feature-spacing: 2em;
-    }
 }
 
 .index-content {
     width: 100%;
-    border: $border-width solid $border;
+    border: var(--border-width) solid var(--border);
     margin: auto;
     margin-bottom: 4em;
 
@@ -48,14 +34,14 @@ $border-width: 0px;
 
         .pitch {
             margin-top: 80px;
-            border: $border-width solid $border;
+            border: var(--border-width) solid var(--border);
             width: 100%;
             margin-right: 21px;
 
             h1 {
                 font-size: 48px;
                 line-height: 1.4em;
-                color: $header;
+                color: var(--header);
                 text-align: center;
                 margin: 0;
             }
@@ -63,7 +49,7 @@ $border-width: 0px;
             p {
                 font-size: 21px;
                 line-height: 1.3em;
-                color: $header;
+                color: var(--header);
                 text-align: center;
             }
         }
@@ -72,7 +58,7 @@ $border-width: 0px;
     .bubble-container {
         display: grid;
         justify-items: center;
-        background: $bubble-background;
+        background: var(--bubble-background);
         width: 100%;
         margin-bottom: calc(var(--overlap) * 0.5);
 
@@ -82,25 +68,13 @@ $border-width: 0px;
             margin-top: 2em;
             margin-bottom: calc(var(--overlap) * -1);
             justify-items: center;
-            align-items: center;
-            grid-template-areas: "image text";
-            gap: 0;
-
-            @include phone {
-                grid-template-areas: "text" "image";
-                align-items: start;
-                gap: 2em;
-            }
-
-            @include tablet {
-                grid-template-areas: "text" "image";
-                // align-items: start;
-                gap: 4em;
-            }
+            align-items: --phone(start, center);
+            grid-template-areas: --phone-tablet("text" "image", "text" "image", "image text");
+            gap: --phone-tablet(2em, 4em, 0);
 
             .image {
                 flex: 1;
-                border: $border-width solid $border;
+                border: var(--border-width) solid var(--border);
                 margin: 0px;
                 grid-area: image;
 
@@ -109,41 +83,26 @@ $border-width: 0px;
                     height: 531px;
                     margin: auto;
 
-                    background-image: url("images/screenshot.png");
+                    background-image: url("screenshot.png");
                     background-size: 100%;
-                    border: $border-width solid $border;
-
-                    @include phone {
-                        // background-image: linear-gradient(to top, rgba($bubble-background, 1), rgba($bubble-background, 0) 20%), url("images/screenshot.png");
-                    }
+                    border: var(--border-width) solid var(--border);
                 }
             }
 
             .text {
+                --local-margin: calc(calc(var(--overlap) * -1) - 2em);
                 display: grid;
-                margin-top: calc(calc(var(--overlap) * -1) - 2em);
-                border: $border-width solid $border;
+                margin-top: --phone-tablet(var(--local-margin), 1em, var(--local-margin));
+                border: var(--border-width) solid var(--border);
                 grid-area: text;
                 gap: 1em;
-
-                @include phone {
-                    width: 320px;
-                    text-align: center;
-                }
-
-                @include tablet {
-                    margin-top: 1em;
-                    text-align: center;
-                }
+                text-align: --phone-tablet(center, center, initial);
+                width: --phone(320px, initial);
 
                 h2 {
-                    font-size: 48px;
+                    font-size: --phone(30px, 48px);
                     margin: 0;
-                    color: $header;
-
-                    @include phone {
-                        font-size: 30px;
-                    }
+                    color: var(--header);
                 }
 
                 p {
@@ -177,7 +136,7 @@ $border-width: 0px;
             justify-content: space-between;
             justify-items: center;
             align-items: center;
-            grid-template-areas: "text image";
+            grid-template-areas: --phone("image" "text", "text image");
 
             .image {
                 grid-area: image;
@@ -186,7 +145,7 @@ $border-width: 0px;
                 background: black;
                 border-radius: var(--image-corner-radius);
 
-                box-shadow: 0px 0px 6px 2px $footer-background;
+                box-shadow: 0px 0px 6px 2px var(--footer-background);
 
                 img {
                     border-radius: var(--image-corner-radius);
@@ -203,7 +162,7 @@ $border-width: 0px;
                 h3 {
                     font-size: 36px;
                     margin-top: 0px;
-                    color: $header;
+                    color: var(--header);
                 }
 
                 p {
@@ -218,21 +177,12 @@ $border-width: 0px;
                     margin: 0;
                 }
             }
-
-            @include phone {
-                align-items: center;
-                grid-template-areas: "image" "text";
-            }
         }
     }
     
     .feature-container:nth-of-type(even) {
         .feature {
-            grid-template-areas: "image text";
-
-            @include phone {
-                grid-template-areas: "image" "text";
-            }
+            grid-template-areas: --phone("image" "text", "image text");
         }
     }
 }

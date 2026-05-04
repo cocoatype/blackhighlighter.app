@@ -1,10 +1,10 @@
-@import 'color';
+@import 'color.css';
 
 a {
-    color: $link;
+    color: var(--link);
 
     &:hover {
-        color: $link-hover;
+        color: var(--link-hover);
     }
 }
 
@@ -45,8 +45,6 @@ h2 {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 0.3rem;
-    // margin-top: 2.2rem;
-    // margin-bottom: 0.7rem;
 }
 
 h3 {
@@ -56,8 +54,8 @@ h3 {
 }
 
 ::selection {
-    background: $text;
-    color: $text;
+    background: var(--text);
+    color: var(--text);
 }
 
 pre {
