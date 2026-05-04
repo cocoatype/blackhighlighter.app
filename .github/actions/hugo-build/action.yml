@@ -6,11 +6,11 @@ runs:
   steps:
     - name: "Download Hugo"
       shell: "bash"
-      run: "wget https://github.com/gohugoio/hugo/releases/download/v0.123.8/hugo_extended_0.123.8_linux-amd64.deb"
+      run: "wget https://github.com/gohugoio/hugo/releases/download/v0.161.1/hugo_0.161.1_linux-amd64.deb"
 
     - name: "Install Hugo"
       shell: "bash"
-      run: "sudo apt install ./hugo_extended_0.123.8_linux-amd64.deb"
+      run: "sudo apt install ./hugo_0.161.1_linux-amd64.deb"
 
     - name: "Build Site"
       shell: "bash"
