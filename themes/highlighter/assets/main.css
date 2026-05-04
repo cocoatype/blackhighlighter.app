@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@import 'helpers/aleo-webfont.css';
+@import 'helpers/color.css';
+@import 'helpers/footer.css';
+@import 'helpers/header.css';
+@import 'helpers/index.css';
+@import 'helpers/mixins.css';
+@import 'helpers/page.css';
+@import 'helpers/press.css';
+@import 'helpers/type.css';
+
+html {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Aleo', 'Times New Roman', serif;
+    font-size: 18px;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    margin: 0;
+
+    max-width: --phone(100%, initial);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: --phone(flex-start, center);
+    min-height: 100dvh;
+    width: --phone(100vw, initial);
+}
+

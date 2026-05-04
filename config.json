@@ -1,6 +1,6 @@
 {
   "baseURL": "https://blackhighlighter.app/",
-  "languageCode": "en-us",
+  "locale": "en-US",
   "title": "Black Highlighter",
   "theme": "highlighter",
   "params": {

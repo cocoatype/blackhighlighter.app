@@ -1,0 +1,11 @@
+/*
+ * Aleo Italic
+ * https://www.behance.net/gallery/aleo-free-font-family/8018673
+ */
+
+@font-face {
+  font-family: 'Aleo';
+  src: url('/fonts/aleo-italic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
