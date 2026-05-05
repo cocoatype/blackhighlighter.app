@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Black Highlighter Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      :root {
+          --tar: #1b1b1b;
+          --ink-black: #232220;
+          --paper: #f4f1ea;
+          --ink-dim: #b8b6b1;
+          --rule: #2e2d2a;
+          --accent: #f8e08e;
+
+          --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+          --serif: 'Aleo', 'Iowan Old Style', 'Charter', 'Times New Roman', serif;
+      }
+      body {
+          background: var(--tar);
+          font-family: var(--serif);
+      }
+      .demo-container {
+          width: fit-content;
+      }
+      .demo-controls {
+          margin-top: 14px;
+          font-size: 14px;
+          color: var(--ink-dim);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+      }
+      .demo-pill {
+          background: var(--accent);
+          color: var(--tar);
+          padding: 3px 10px;
+          border-radius: 999px;
+          font-weight: 700;
+          font-size: 12px;
+          font-family: var(--mono);
+      }
+      .demo-reset {
+          margin-left: auto;
+          background: transparent;
+          color: var(--ink-dim);
+          border: 1px solid var(--rule);
+          padding: 4px 10px;
+          border-radius: 4px;
+          cursor: pointer;
+          font-family: var(--serif);
+      }
+      .demo-reset:hover {
+          color: var(--ink);
+          border-color: var(--ink-dim);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="demo-container">
+      <canvas id="demo" width="640" height="480" style="cursor: crosshair; touch-action: none;">
+        A demo of Black Highlighter.
+      </canvas>
+      <div class="demo-controls">
+        <span class="demo-pill">Try it →</span>
+        Drag across the text to redact it.
+        <button class="demo-reset" onClick>Reset</button>
+      </div>
+    </div>
+    {{ $script := resources.Get "demo.js" | js.Build }}
+    <script src="{{ $script.RelPermalink }}"></script>
+  </body>
+</html>
