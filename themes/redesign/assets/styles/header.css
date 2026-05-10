@@ -1,0 +1,72 @@
+@import 'colors.css';
+
+.landing-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    padding: 14px 32px;
+
+    background: rgb(from var(--tar) r g b / 0.82);
+    backdrop-filter: saturate(140%) blur(14px);
+    -webkit-backdrop-filter: saturate(140%) blur(14px);
+
+    border-bottom: 1px solid var(--rule);
+
+    nav {
+        display: flex;
+        gap: 22px;
+        margin-left: 12px;
+
+        a {
+            text-decoration: none;
+            color: var(--ink-dim);
+            font-size: 15px;
+            font-weight: 600;
+
+            &:hover {
+                color: var(--ink);
+            }
+        }
+    }
+
+    .cta {
+        margin-left: auto;
+
+        text-decoration: none;
+
+        background: var(--ink);
+        color: var(--tar);
+
+        padding: 9px 16px;
+        border-radius: 999px;
+
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        font-weight: 700;
+
+        img {
+            background: white;
+            width: 26px;
+            height: 26px;
+
+            border-radius: 15%;
+
+            @supports (corner-shape: squircle) {
+                border-radius: 26%;
+                corner-shape: squircle;
+            }
+        }
+    }
+}

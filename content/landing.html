@@ -1,0 +1,53 @@
++++
+title = "Landing"
+layout = "landing"
+type = "landing"
++++
+
+<header class="landing-header">
+  <a class="brand">
+    <img />
+    <span>Black Highlighter</span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="#features">Features</a>
+    <a href="#use-cases">Use cases</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#faq">FAQ</a>
+    <a href="#releases">Releases</a>
+  </nav>
+  <a class="cta" href="/appstore">
+    <span>Get the app</span>
+  </a>
+</header>
+
+<main class="landing">
+  <section class="hero">
+    <div class="text">
+      <span class="eyebrow">For iPhone, iPad, and Mac</span>
+      <h1>
+        Redact text in screenshots and photos,
+        <em> in two seconds, on device.</em>
+      </h1>
+      <p class="subhead">Black Highlighter snaps clean black bars over names, emails, account numbers, and anything else you don&apos;t want to share. Nothing leaves your phone.</p>
+      <div class="download">
+        <a class="appstore" href="/appstore" aria-label="Download on the App Store">
+          <img src="/images/appstore.svg" alt="Download on the App Store" />
+        </a>
+        <a class="appstore" href="/appstore" aria-label="Download on the Mac App Store">
+          <img src="/images/macappstore.svg" alt="Download on the Mac App Store" />
+        </a>
+      </div>
+    </div>
+    <div class="demo">
+      <canvas id="canvas" width="640" height="480" style="cursor: crosshair; touch-action: none;">
+        A demo of Black Highlighter.
+      </canvas>
+      <div class="controls">
+        <span class="pill">Try it →</span>
+        Drag across the text to redact it.
+        <button class="reset" onClick>Reset</button>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import 'styles/colors.css';
+@import 'styles/fonts.css';
+
+@import 'styles/header.css';
+@import 'styles/landing.css';
+
+html {
+    background-color: var(--tar);
+    color: var(--ink);
+
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.55;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,107 @@
+main.landing {
+    section.hero {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 56px;
+        align-items: center;
+
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 80px 48px 90px;
+
+        position: relative;
+
+        .text {
+            position: relative;
+
+            .eyebrow {
+                display: inline-block;
+
+                font-family: var(--mono);
+                font-size: 12px;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+
+                color: var(--ink-dim);
+                border: 1px solid var(--rule);
+                padding: 5px 10px;
+                border-radius: 4px;
+
+                margin-bottom: 22px;
+            }
+
+            h1 {
+                font-size: clamp(36px, 4.6vw, 60px);
+                letter-spacing: -0.01em;
+                line-height: 1.07;
+                position: relative;
+
+                em {
+                    font-style: italic;
+                    color: var(--accent);
+                    display: inline;
+                    font-weight: 400;
+                }
+            }
+
+            .subhead {
+                font-size: 19px;
+                margin-top: 24px;
+                max-width: 540px;
+                line-height: 1.5;
+            }
+
+            .download {
+                display: flex;
+                gap: 14px;
+                margin-top: 32px;
+                align-items: center;
+                flex-wrap: wrap;
+
+                img {
+                    height: 44px;
+                    display: block;
+                }
+            }
+        }
+
+        .demo {
+            width: fit-content;
+
+            .controls {
+                margin-top: 14px;
+                font-size: 14px;
+                color: var(--ink-dim);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .pill {
+                    background: var(--accent);
+                    color: var(--tar);
+                    padding: 3px 10px;
+                    border-radius: 999px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    font-family: var(--mono);
+                }
+
+                .reset {
+                    margin-left: auto;
+                    background: transparent;
+                    color: var(--ink-dim);
+                    border: 1px solid var(--rule);
+                    padding: 4px 10px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-family: var(--serif);
+
+                    &:hover {
+                        color: var(--ink);
+                        border-color: var(--ink-dim);
+                    }
+                }
+            }
+        }
+    }
+}

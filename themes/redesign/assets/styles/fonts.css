@@ -1,0 +1,23 @@
+@import 'styles/aleo-webfont.css';
+
+:root {
+    --mono: ui-monospace, SFMono-Regular, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    --serif: 'Aleo', -apple-system-ui-serif, ui-serif, 'Iowan Old Style', 'Charter', 'Times New Roman', serif;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.18;
+    color: var(--ink);
+    margin: 0;
+    text-wrap: balance;
+}
+
+p {
+    margin: 0;
+    color: var(--ink-dim);
+}
+
+a {
+    color: var(--ink);
+}
