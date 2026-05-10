@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import 'styles/colors.css';
+@import 'styles/durations.css';
 @import 'styles/fonts.css';
 
 @import 'styles/footer.css';
