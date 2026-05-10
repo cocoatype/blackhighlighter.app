@@ -1,0 +1,42 @@
+main.landing {
+    section.social-proof {
+        max-width: 1180px;
+        margin: 0 auto;
+        position: relative;
+
+        padding: 28px 48px;
+
+
+        border-top: 1px solid var(--rule);
+        border-bottom: 1px solid var(--rule);
+
+        .stats {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        span {
+            display: block;
+        }
+
+        span.num {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        span.label {
+            font-size: 13px;
+            color: var(--ink-dim);
+            margin-top: 2px;
+        }
+
+        .divider {
+            width: 1px;
+            height: 38px;
+            background: var(--rule);
+        }
+    }
+}

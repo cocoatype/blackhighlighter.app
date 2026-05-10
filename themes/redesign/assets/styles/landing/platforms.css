@@ -1,0 +1,57 @@
+main.landing {
+    section.platforms {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 80px 48px;
+        position: relative;
+
+        header {
+            text-align: center;
+            margin: 0 auto 48px;
+            max-width: 640px;
+
+            h2 { font-size: 38px; }
+            p {
+                margin-top: 12px;
+                font-size: 18px;
+            }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+
+            .card {
+                background: var(--ink-black);
+                border: 1px solid var(--rule);
+                border-radius: 14px;
+                padding: 26px;
+
+                transition: border-color var(--instant), transform var(--instant);
+
+                &:hover {
+                    transform: translateY(-2px);
+                    border-color: var(--accent);
+                }
+
+                span {
+                    display: inline-block;
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    letter-spacing: 0.14em;
+                    text-transform: uppercase;
+                    color: var(--accent);
+                    margin-bottom: 12px;
+                }
+
+                h3 {
+                    font-size: 21px;
+                    margin-bottom: 8px;
+                }
+
+                p { font-size: 15px; }
+            }
+        }
+    }
+}

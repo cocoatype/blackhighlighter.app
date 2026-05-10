@@ -1,0 +1,353 @@
++++
+title = "Landing"
+layout = "landing"
+type = "landing"
+draft = true
++++
+
+<header class="landing-header">
+  <a class="brand">
+    <img />
+    <span>Black Highlighter</span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="#features">Features</a>
+    <a href="#use-cases">Use cases</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#faq">FAQ</a>
+    <a href="#releases">Releases</a>
+  </nav>
+  <a class="cta" href="/appstore">
+    <span>Get the app</span>
+  </a>
+  <div class="glass"></div>
+</header>
+
+<main class="landing">
+  <section class="hero">
+    <div class="text">
+      <span class="eyebrow">For iPhone, iPad, and Mac</span>
+      <h1>
+        Redact text in screenshots and photos,
+        <em> in two seconds, on device.</em>
+      </h1>
+      <p class="subhead">Black Highlighter snaps clean black bars over names, emails, account numbers, and anything else you don&apos;t want to share. Nothing leaves your phone.</p>
+      <div class="download">
+        <a class="appstore" href="/appstore" aria-label="Download on the App Store">
+          <img src="/images/appstore.svg" alt="Download on the App Store" />
+        </a>
+        <a class="appstore" href="/appstore" aria-label="Download on the Mac App Store">
+          <img src="/images/macappstore.svg" alt="Download on the Mac App Store" />
+        </a>
+      </div>
+    </div>
+    <div class="demo">
+      <canvas id="canvas" width="640" height="480" style="cursor: crosshair; touch-action: none;">
+        A demo of Black Highlighter.
+      </canvas>
+      <div class="controls">
+        <span class="pill">Try it →</span>
+        Drag across the text to redact it.
+        <button class="reset" onClick>Reset</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-proof">
+    <div class="stats">
+    <div class="stat">
+      <span class="num">4.4★</span>
+      <span class="label">App Store rating</span>
+    </div>
+    <div class="divider"></div>
+    <div class="stat">
+      <span class="num">600k+</span>
+      <span class="label">Redactions made each year</span>
+    </div>
+    <div class="divider"></div>
+    <div class="stat">
+      <span class="num">100%</span>
+      <span class="label">On-device. Always.</span>
+    </div>
+    </div>
+  </section>
+
+  <section id="features" class="magic">
+    <div id="slider" style="--pct: 50%">
+      <div class="contents">
+        <div class="doc before">
+          <div class="row">From: <strong>ned@leftorium.shop</strong></div>
+          <div class="row">Phone: <strong>(458) 555-8904</strong></div>
+          <div class="row">Account: <strong>2918-7843-8121-7289</strong></div>
+          <div class="row">Address: <strong>744 Evergreen Terrace</strong></div>
+          <div class="row">DOB: <strong>June 7, 1959</strong></div>
+          <div class="tag before">Before</div>
+        </div>
+
+        <div class="doc after">
+          <div class="row">From: <span class="bar" style="width: 18ch"/></div>
+          <div class="row">Phone: <span class="bar" style="width: 14ch"/></div>
+          <div class="row">Account: <span class="bar" style="width: 19ch"/></div>
+          <div class="row">Address: <span class="bar" style="width: 21ch"/></div>
+          <div class="row">DOB: <span class="bar" style="width: 12ch"/></div>
+          <div class="tag after">After</div>
+        </div>
+      </div>
+
+      <div class="handle" style="left: 50%">
+        <div class="thumb">⇆</div>
+      </div>
+      <input type="range" min="0" max="100" value="50" aria-label="Before / after slider"/>
+    </div>
+    <header>
+      <span class="eyebrow golden">The Headline Feature</span>
+      <h2>Magic Highlighter snaps to text — and covers it perfectly.</h2>
+      <p>Drag a stroke across any name, email, or account number. Black Highlighter detects the bounds and lays down a clean, opaque bar. Neater than a finger, and harder to guess at than wobbly hand-drawn rectangles.</p>
+    </header>
+  </section>
+
+  <section class="features">
+    <header>
+      <span class="eyebrow">Other Features</span>
+      <h2>Six small things that compound into one fast workflow.</h2>
+    </header>
+    <div class="grid">
+      <div class="card">
+        <span>01</span>
+        <h3>No peeking</h3>
+        <p>Redactions are permanent and flattened. Once your image is saved, no amount of photo editing can uncover what you hid.</p>
+      </div>
+      <div class="card">
+        <span>02</span>
+        <h3>Not just black</h3>
+        <p>Use white to redact in dark mode. Pick different colors for different participants in a group chat so you can show structure without showing names.</p>
+      </div>
+      <div class="card">
+        <span>03</span>
+        <h3>Multi-lingual</h3>
+        <p>Black Highlighter supports redacting text auf Deutsch, 中文, 한국어, Українська, العربية, and many other languages.</p>
+      </div>
+      <div class="card">
+        <span>04</span>
+        <h3>Paper or plastic?</h3>
+        <p>Even printed receipts, prescriptions, and tickets are no problem. Scan with your phone&apos;s camera and Black Highlighter auto-crops the page so you can redact and share immediately.</p>
+      </div>
+      <div class="card">
+        <span>05</span>
+        <h3>Set-and-forget rules</h3>
+        <p>Tell Black Highlighter to always cover phone numbers, addresses, or emails. Drop in any screenshot and it&apos;s redacted by the time you tap Share.</p>
+      </div>
+      <div class="card">
+        <span>06</span>
+        <h3>Taking shortcuts</h3>
+        <p>Wire up Black Highlighter inside the Shortcuts app. One tap from the share sheet to a fully redacted, ready-to-send screenshot.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="platforms" aria-label="Per-platform features">
+    <header>
+      <h2>Made for every Apple device — properly</h2>
+      <p>Three apps that each feel right at home.</p>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <span>iPhone</span>
+        <h3>Share-sheet first</h3>
+        <p>Redact a screenshot the second you take it. Tap Share, pick Black Highlighter, drag, send. No round-trip through Photos.</p>
+      </div>
+      <div class="card">
+        <span>iPad</span>
+        <h3>Apple Pencil precision</h3>
+        <p>Redact handwritten notes, marked-up PDFs, and Procreate canvases with Pencil. Pencil Pro support lets you swap colors and tools with a tap or squeeze.</p>
+      </div>
+      <div class="card">
+        <span>Mac</span>
+        <h3>Copy, paste, redact</h3>
+        <p>Start with an image on your clipboard and Black Highlighter opens it pre-redacted with your common rules. Built for the moment before you paste into Slack.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="use-cases" class="use-cases">
+    <header>
+      <span class="eyebrow">What People Redact</span>
+      <h2>Eight common redactions, one quick app</h2>
+    </header>
+    <div class="grid">
+      <div class="card">
+        <div class="icon" aria-hidden="true">✈️</div>
+        <h3>Boarding passes</h3>
+        <p>Hide the booking ref before posting your trip pic.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">🏦</div>
+        <h3>Bank statements</h3>
+        <p>Redact account & routing numbers before sending to landlords.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">💬</div>
+        <h3>Group chats</h3>
+        <p>Color-code participants and hide their names in a screenshot.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">🩺</div>
+        <h3>Medical bills</h3>
+        <p>Cover patient IDs and provider numbers before sharing with family.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">📄</div>
+        <h3>Resumes & contracts</h3>
+        <p>Show the layout, hide the people, before posting examples.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">👶</div>
+        <h3>Kids in photos</h3>
+        <p>Block out school logos, addresses, and your kid&apos;s name with one stroke.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">🪪</div>
+        <h3>ID & passports</h3>
+        <p>Prove the format, not the number, when uploading documents.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">💼</div>
+        <h3>Work screenshots</h3>
+        <p>Strip customer names from bug reports and design reviews.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" class="privacy">
+    <div>
+      <header>
+        <span class="eyebrow">Privacy</span>
+        <h2>Your secrets stay on your device. Period.</h2>
+      </header>
+      <div class="grid">
+        <div class="card">
+          <h3>On-device</h3>
+          <p>All redaction runs on your phone. The image never leaves it.</p>
+        </div>
+        <div class="card">
+          <h3>No accounts</h3>
+          <p>No sign-up, no login, no email collected. Ever.</p>
+        </div>
+        <div class="card">
+          <h3>Keep your photos</h3>
+          <p>Open only the image you want to redact, not your whole library.</p>
+        </div>
+        <div class="card">
+          <h3>Offline</h3>
+          <p>Works in airplane mode. Useful at airports, hospitals, and abroad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="comparison">
+    <header>
+      <h2>Why not just use the system markup tool?</h2>
+      <p>Honest comparison. The right tool depends on what you&apos;re hiding.</p>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th class="self">Black Highlighter</th>
+          <th>iOS Markup</th>
+          <th>macOS Preview</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Snaps to text automatically</th>
+          <td class="yes">●</td>
+          <td class="no">○</td>
+          <td class="no">○</td>
+        </tr>
+        <tr>
+          <th>Editable after save</th>
+          <td class="yes">●</td>
+          <td class="no">○</td>
+          <td class="yes">●</td>
+        </tr>
+        <tr>
+          <th>Truly opaque (no faint outline)</th>
+          <td class="yes">●</td>
+          <td class="no">○</td>
+          <td class="no">○</td>
+        </tr>
+        <tr>
+          <th>Works on scanned paper documents</th>
+          <td class="yes">●</td>
+          <td class="no">○</td>
+          <td class="yes">●</td>
+        </tr>
+        <tr>
+          <th>Per-contact color coding</th>
+          <td class="yes">●</td>
+          <td class="no">○</td>
+          <td class="no">○</td>
+        </tr>
+        <tr>
+          <th>Shortcuts support</th>
+          <td class="yes">●</td>
+          <td class="no">○</td>
+          <td class="no">○</td>
+        </tr>
+        <tr>
+          <th>Truly on-device</th>
+          <td class="yes">●</td>
+          <td class="yes">●</td>
+          <td class="yes">●</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="faq" class="faq">
+    <header>
+      <span class="eyebrow">Frequently Asked</span>
+      <h2>Questions worth answering before you download</h2>
+    </header>
+    <div class="list">
+      <details open name="question">
+        <summary><span>Is the redaction permanent?</span></summary>
+        <p>Yes. When you export the redacted image, the pixels under the bars are flattened; there&apos;s no hidden layer to peel back. Saved files contain only the redacted pixels.</p>
+      </details>
+      <details name="question">
+        <summary><span>Does Black Highlighter upload my photos anywhere?</span></summary>
+        <p>No. Everything happens on your device. The app does not connect to any server, and works fully offline.</p>
+      </details>
+      <details name="question">
+        <summary><span>Will the redaction survive screenshots and re-shares?</span></summary>
+        <p>Yes. Once exported, the bars are baked into the image. Forwarding, screenshotting, or printing it is fully redacted.</p>
+      </details>
+      <details name="question">
+        <summary><span>Can someone reverse the redaction?</span></summary>
+        <p>Black Highlighter uses fully opaque solid-color bars (not blur or pixelation) so there is no statistical signal left to reverse-engineer.</p>
+      </details>
+      <details name="question">
+        <summary><span>Does it work on languages other than English?</span></summary>
+        <p>Yes. The Magic Highlighter snaps to text in any language Apple&apos;s on-device OCR supports, including non-Latin scripts.</p>
+      </details>
+      <details name="question">
+        <summary><span>How much does it cost?</span></summary>
+        <p>Black Highlighter is free to download. A one-time purchase or subscription (your choice!) unlocks the document scanner, automatic rules, and Shortcuts integration.</p>
+      </details>
+    </div>
+
+  </section>
+
+  <section id="releases" class="changelog">
+    <header>
+      <h2>What&apos;s new</h2>
+      <a href="/releases">See all releases →</a>
+    </header>
+    <div class="list">
+    {{< changelog >}}
+    </div>
+  </section>
+</main>

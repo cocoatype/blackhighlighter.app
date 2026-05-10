@@ -1,0 +1,19 @@
+.eyebrow {
+    display: inline-block;
+
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    color: var(--ink-dim);
+    border: 1px solid var(--rule);
+    padding: 5px 10px;
+    border-radius: 4px;
+
+    margin-bottom: 22px;
+
+    &.golden {
+        color: var(--accent);
+    }
+}

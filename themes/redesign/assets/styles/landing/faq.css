@@ -1,0 +1,78 @@
+main.landing {
+    section.faq {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 90px 48px;
+        position: relative;
+
+        header {
+            margin-bottom: 32px;
+            position: relative;
+
+            h2 {
+                font-size: 36px;
+                margin-top: 12px;
+            }
+        }
+
+        .list {
+            display: grid;
+            gap: 10px;
+
+            details {
+                border: 1px solid var(--rule);
+                border-radius: 10px;
+                background: var(--ink-black);
+                overflow: hidden;
+
+                interpolate-size: allow-keywords;
+
+                summary {
+                    background: transparent;
+                    color: var(--ink);
+                    border: 0;
+                    width: 100%;
+                    text-align: left;
+                    padding: 18px 22px;
+
+                    font-family: var(--serif);
+                    font-size: 18px;
+                    font-weight: 700;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+
+                    &::after {
+                        color: var(--accent);
+                        font-size: 22px;
+                        content: "+";
+                    }
+                }
+
+                p {
+                    padding: 0 22px 18px;
+                }
+
+                &::details-content {
+                    block-size: 0;
+                    transition: content-visibility, block-size;
+                    transition-duration: 0.2s;
+                    transition-behavior: allow-discrete;
+                }
+
+                &:open {
+                    border-color: rgb(from var(--accent) r g b / 0.4);
+                    summary::after {
+                        content: "–";
+                    }
+
+                    &::details-content {
+                        block-size: auto;
+                    }
+                }
+            }
+        }
+    }
+}

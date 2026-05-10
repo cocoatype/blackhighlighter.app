@@ -1,0 +1,4 @@
+{{ range first 1 (where .Site.Pages "Section" "releases") }}
+<h3>{{ .Title }} &mdash; {{ dateFormat "January 2, 2006" .Date }}</h3>
+{{ .Content }}
+{{ end }}

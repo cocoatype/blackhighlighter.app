@@ -67,7 +67,17 @@
         <button class="demo-reset" onClick>Reset</button>
       </div>
     </div>
-    {{ $script := resources.Get "demo.js" | js.Build }}
-    <script src="{{ $script.RelPermalink }}"></script>
+  {{ with resources.Get "demo.ts" }}
+    {{ $opts := dict "minify" (cond hugo.IsDevelopment false true) "sourceMap" "none" }}
+    {{ with . | js.Build $opts }}
+      {{ if hugo.IsDevelopment }}
+        <script src="{{ .RelPermalink }}"></script>
+      {{ else }}
+        {{ with . | fingerprint }}
+          <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
   </body>
 </html>
