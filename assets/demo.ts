@@ -319,3 +319,30 @@ function findRedactions() {
 }
 
 requestAnimationFrame(drawDemo);
+
+// Slider
+
+const slider = document.querySelector("#slider");
+if (!(slider instanceof HTMLDivElement)) {
+  throw new Error("Slider element not found");
+}
+
+const sliderContents = slider.querySelector(".contents");
+if (!(sliderContents instanceof HTMLDivElement)) {
+  throw new Error("Slider contents not found");
+}
+
+const handle = slider.querySelector(".handle");
+if (!(handle instanceof HTMLDivElement)) {
+  throw new Error("Slider handle not found");
+}
+
+const input = slider.querySelector("input");
+if (!(input instanceof HTMLInputElement)) {
+  throw new Error("Input element not found");
+}
+
+input.oninput = () => {
+  slider.style.setProperty("--pct", `${input.value}%`);
+  handle.style.setProperty("left", `${input.value}%`);
+}
