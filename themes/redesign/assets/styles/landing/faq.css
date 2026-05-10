@@ -63,6 +63,7 @@ main.landing {
                 }
 
                 &:open {
+                    border-color: rgb(from var(--accent) r g b / 0.4);
                     summary::after {
                         content: "–";
                     }
