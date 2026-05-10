@@ -28,6 +28,13 @@ main.landing {
                 border-radius: 14px;
                 padding: 26px;
 
+                transition: border-color var(--instant), transform var(--instant);
+
+                &:hover {
+                    transform: translateY(-2px);
+                    border-color: var(--accent);
+                }
+
                 span {
                     display: inline-block;
                     font-family: var(--mono);

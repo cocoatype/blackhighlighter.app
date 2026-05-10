@@ -37,6 +37,13 @@ main.landing {
                 padding: 20px 22px;
                 text-decoration: none;
 
+                transition: border-color var(--instant), transform var(--instant);
+
+                &:hover {
+                    transform: translateY(-2px);
+                    border-color: var(--accent);
+                }
+
                 .meta {
                     display: flex;
                     gap: 12px;

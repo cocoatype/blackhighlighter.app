@@ -27,7 +27,7 @@ main.landing {
                 border-radius: 14px;
 
                 padding: 22px;
-                transition: transform 0.16s;
+                transition: border-color var(--instant), transform var(--instant);
 
                 &:hover {
                     transform: translateY(-2px);

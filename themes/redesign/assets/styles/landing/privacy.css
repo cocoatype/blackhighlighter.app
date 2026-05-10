@@ -36,6 +36,13 @@ main.landing {
 
                     padding: 26px 22px;
 
+                    transition: opacity var(--instant), transform var(--instant);
+
+                    &:hover {
+                        transform: translateY(2px);
+                        opacity: 60%;
+                    }
+
                     h3 {
                         font-size: 19px;
                         margin-bottom: 6px;
