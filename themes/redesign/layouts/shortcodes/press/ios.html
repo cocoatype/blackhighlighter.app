@@ -1,0 +1,8 @@
+<div class="ios press-image">
+    <a {{ with .Get "href" }} href="/images/press/{{.}}.png" {{ end }}>
+    <img {{ with .Get "thumb" }} src="/images/press/{{.}}@1x.png" srcset="
+        /images/press/{{.}}@1x.png 1x,
+        /images/press/{{.}}@2x.png 2x,
+        /images/press/{{.}}@3x.png 3x" {{ end }}>
+    </a>
+</div>
