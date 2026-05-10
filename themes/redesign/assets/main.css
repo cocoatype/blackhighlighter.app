@@ -9,6 +9,11 @@
 
 * {
     box-sizing: border-box;
+
+    &::selection {
+        background: var(--pitch);
+        color: var(--pitch);
+    }
 }
 
 html {
