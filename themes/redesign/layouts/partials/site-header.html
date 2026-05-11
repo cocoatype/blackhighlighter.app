@@ -1,0 +1,12 @@
+<header class="site header">
+  <a class="brand" href="/">
+    <img />
+    <span>Black Highlighter</span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="/blog"{{ if eq .Section "blog" }} class="current"{{ end }}>Blog</a>
+    <a href="/releases"{{ if eq .Section "releases" }} class="current"{{ end }}>Releases</a>
+    <a href="/contact"{{ if eq .RelPermalink "/contact/" }} class="current"{{ end }}>Support</a>
+  </nav>
+  <div class="glass"></div>
+</header>

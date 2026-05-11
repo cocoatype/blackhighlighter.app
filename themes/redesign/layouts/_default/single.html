@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{- partial "site-header.html" . -}}
 <main class="single">
   <h1>{{ .Title }}</h1>
   <p class="date">{{ dateFormat "January 2, 2006" .Date }}</p>
