@@ -2,7 +2,9 @@
 {{- partial "site-header.html" . -}}
 <main class="single">
   <h1>{{ .Title }}</h1>
+  {{ if (not .Date.IsZero) }}
   <p class="date">{{ dateFormat "January 2, 2006" .Date }}</p>
+  {{ end }}
   <article>
     {{ .Content }}
   </article>

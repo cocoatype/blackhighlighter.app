@@ -1,19 +1,25 @@
 {{ define "main" }}
-    <article class="post">
-        <div class="post-header">
-            <h1 class="post-title">{{ .Title }}</h1>
-        </div>
-        <div class="post-content">
-            {{ range .Pages }}
-            <section>
-                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                {{ if and (isset .Params "summary") (ne .Params.Summary "") }}
-                    <p>{{ .Params.Summary | markdownify }}</p>
-                {{ else }}
-                    {{ .Summary }}
-                {{ end }}
-            </section>
-            {{ end }}
-        </div>
-    </article>
+{{- partial "site-header.html" . -}}
+<main class="list">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Summary }}</p>
+  <ul>
+    {{ range .Pages }}
+    <li>
+      <span>{{ dateFormat "January 2, 2006" .Date }}</span>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <div></div>
+      <div class="summary">
+        {{ if and (isset .Params "summary") (ne .Params.Summary "") }}
+        <p>{{ .Params.Summary | markdownify }}</p>
+        {{ else }}
+        {{ .Summary }}
+        {{ end }}
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</main>
 {{ end }}
+
+
