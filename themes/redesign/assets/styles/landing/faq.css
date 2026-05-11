@@ -29,7 +29,7 @@ main.landing {
 
                 summary {
                     background: transparent;
-                    color: var(--ink);
+                    color: var(--ink-bright);
                     border: 0;
                     width: 100%;
                     text-align: left;

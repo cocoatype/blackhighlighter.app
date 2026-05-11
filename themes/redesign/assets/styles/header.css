@@ -47,7 +47,7 @@
             font-weight: 600;
 
             &:hover {
-                color: var(--ink);
+                color: var(--ink-bright);
             }
         }
     }
@@ -57,7 +57,7 @@
 
         text-decoration: none;
 
-        background: var(--ink);
+        background: var(--ink-bright);
         color: var(--tar);
 
         padding: 9px 16px;
@@ -85,6 +85,10 @@
                 border-radius: 26%;
                 corner-shape: squircle;
             }
+        }
+
+        span {
+            color: var(--ink-bright);
         }
     }
 }
