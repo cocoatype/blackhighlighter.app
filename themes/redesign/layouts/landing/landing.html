@@ -14,4 +14,71 @@
       {{ end }}
     {{ end }}
   {{ end }}
-{{ end }}
+  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Black Highlighter",
+        "operatingSystem": "iOS, iPadOS, macOS",
+        "applicationCategory": "PhotoApplication",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "ratingCount": "88" }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is the redaction permanent?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. When you export, the pixels under the bars are flattened — there's no hidden layer."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Black Highlighter upload my photos anywhere?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Everything happens on your device. The app does not connect to any server, and works fully offline."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will the redaction survive screenshots and re-shares?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Once exported, the bars are baked into the image. Forwarding, screenshotting, or printing it is fully redacted."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can someone reverse the redaction?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Black Highlighter uses fully opaque solid-color bars (not blur or pixelation) so there is no statistical signal left to reverse-engineer."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does it work on languages other than English?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The Magic Highlighter snaps to text in any language Apple's on-device OCR supports, including non-Latin scripts."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does it cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Black Highlighter is free to download. A one-time purchase or subscription (your choice!) unlocks the document scanner, automatic rules, and Shortcuts integration."
+                }
+            }
+        ]
+    }
+  </script>
+  {{ end }}
