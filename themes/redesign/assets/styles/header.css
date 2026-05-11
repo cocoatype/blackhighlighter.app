@@ -1,6 +1,6 @@
 @import 'colors.css';
 
-.landing-header {
+header.header {
     position: sticky;
     top: 0;
     z-index: 50;
@@ -35,10 +35,24 @@
         -webkit-backdrop-filter: saturate(140%) blur(16px);
     }
 
+    &.landing nav {
+        margin-left: 12px;
+    }
+
+    &.site nav {
+        margin-left: auto;
+        a.current {
+            color: var(--ink-bright);
+            text-decoration: underline;
+            text-decoration-color: var(--accent);
+            text-underline-offset: 6px;
+            text-decoration-thickness: 2px;
+        }
+    }
+
     nav {
         display: flex;
         gap: 22px;
-        margin-left: 12px;
 
         a {
             text-decoration: none;
@@ -47,7 +61,7 @@
             font-weight: 600;
 
             &:hover {
-                color: var(--ink);
+                color: var(--ink-bright);
             }
         }
     }
@@ -57,7 +71,7 @@
 
         text-decoration: none;
 
-        background: var(--ink);
+        background: var(--ink-bright);
         color: var(--tar);
 
         padding: 9px 16px;
@@ -85,6 +99,10 @@
                 border-radius: 26%;
                 corner-shape: squircle;
             }
+        }
+
+        span {
+            color: var(--ink-bright);
         }
     }
 }

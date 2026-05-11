@@ -81,7 +81,7 @@ main.landing {
                     font-family: var(--serif);
 
                     &:hover {
-                        color: var(--ink);
+                        color: var(--ink-bright);
                         border-color: var(--ink-dim);
                     }
                 }
