@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+description: "Black Highlighter never uploads your photos and has no accounts. Here’s exactly what is and isn’t collected."
 ---
 
 Black Highlighter is all about keeping private stuff private. It wouldn’t be very nice of me to go and undo all of that by stealing your personal data behind your back. Black Highlighter shares as little information as possible to do its job. More information is below:
@@ -25,6 +26,6 @@ Apple may (depending on your preferences) collect some analytics about your use 
 
 ## Other Information
 
-This privacy policy might change over time. A [full change history](https://git.pado.name/highlighter/site/-/commits/deploy/content/privacy.md) is available.
+This privacy policy might change over time. A [full change history](https://github.com/cocoatype/blackhighlighter.app/blob/deploy/content/privacy.md) is available.
 
 If you have any questions about anything on this page, or have some other concern, [send me an e-mail](mailto:hello@cocoatype.com).
