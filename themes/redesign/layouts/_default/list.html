@@ -8,7 +8,7 @@
     <li>
       <span>{{ dateFormat "January 2, 2006" .Date }}</span>
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <div></div>
+      <div class="spacer"></div>
       <div class="summary">
         {{ if and (isset .Params "summary") (ne .Params.Summary "") }}
         <p>{{ .Params.Summary | markdownify }}</p>
