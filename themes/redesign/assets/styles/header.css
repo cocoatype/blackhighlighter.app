@@ -54,6 +54,10 @@ header.header {
         display: flex;
         gap: 22px;
 
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+
         a {
             text-decoration: none;
             color: var(--ink-dim);

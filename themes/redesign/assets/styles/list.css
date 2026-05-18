@@ -57,6 +57,11 @@ main.list {
             gap: 8px 24px;
             align-items: baseline;
 
+            @media screen and (max-width: 480px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto;
+            }
+
             span {
                 font-family: var(--mono);
                 font-size: 13px;
@@ -76,6 +81,12 @@ main.list {
             }
 
             div {
+                &.spacer {
+                    @media screen and (max-width: 480px) {
+                        display: none;
+                    }
+                }
+
                 p {
                     margin: 0;
                     font-size: 15px;

@@ -22,6 +22,10 @@ main.landing {
             grid-template-columns: repeat(3, 1fr);
             gap: 22px;
 
+            @media screen and (max-width: 480px) {
+                grid-template-columns: 1fr;
+            }
+
             .card {
                 background: var(--ink-black);
                 border: 1px solid var(--rule);
