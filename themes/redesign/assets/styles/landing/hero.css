@@ -11,6 +11,12 @@ main.landing {
 
         position: relative;
 
+        @media screen and (max-width: 480px) {
+            grid-template-columns: none;
+            grid-template-rows: 1.1fr 1fr;
+            justify-content: center;
+        }
+
         .text {
             position: relative;
 

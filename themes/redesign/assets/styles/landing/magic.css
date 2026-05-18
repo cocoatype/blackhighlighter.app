@@ -7,8 +7,17 @@ main.landing {
 
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-areas: "slider text";
+
+        @media screen and (max-width: 480px) {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "text"
+                "slider";
+        }
 
         header {
+            grid-area: text;
             h2 { font-size: 44px; }
             p {
                 font-size: 18px;
@@ -21,6 +30,13 @@ main.landing {
             width: 88%;
             max-width: 460px;
             position: relative;
+            grid-area: slider;
+            margin-top: 48px;
+
+            @media screen and (max-width: 480px) {
+                width: 100%;
+                max-width: none;
+            }
 
             .contents {
                 position: relative;
