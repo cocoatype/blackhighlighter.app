@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{- partial "site-header.html" . -}}
+<main class="press">
+  {{ .Content }}
+</main>
+{{ end }}
+{{ define "scripts" }}
+  {{ with resources.Get "press.ts" }}
+    {{ $opts := dict "minify" (cond hugo.IsDevelopment false true) "sourceMap" "none" }}
+    {{ with . | js.Build $opts }}
+      {{ if hugo.IsDevelopment }}
+        <script src="{{ .RelPermalink }}"></script>
+      {{ else }}
+        {{ with . | fingerprint }}
+          <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
