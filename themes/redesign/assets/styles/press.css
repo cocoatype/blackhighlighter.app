@@ -7,11 +7,19 @@ main.press {
     font-size: 18px;
     line-height: 1.65;
 
+    @media screen and (max-width: 480px) {
+        padding: 64px 16px 80px;
+    }
+
     .hero {
         display: grid;
         grid-template-columns: 1.1fr 1fr;
         gap: 56px;
         align-items: center;
+
+        @media screen and (max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
 
         .text {
             h1 {
@@ -158,6 +166,10 @@ main.press {
     .block {
         padding: 60px 48px;
 
+        @media screen and (max-width: 480px) {
+            padding: 48px 0px;
+        }
+
         & + .block {
             padding-top: 0;
         }
@@ -169,6 +181,11 @@ main.press {
             align-items: first baseline;
 
             margin-bottom: 32px;
+
+            @media screen and (max-width: 480px) {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
 
             .number {
                 font-family: var(--mono);
@@ -192,153 +209,162 @@ main.press {
             }
         }
 
-        .about {
-            display: grid;
-            grid-template-columns: 1.4fr 1fr;
-            gap: 40px;
-            align-items: start;
-
-            .prose {
-                font-size: 18px;
-                line-height: 1.6;
-
-                color: var(--ink-dim);
-                border-left: 2px solid var(--accent);
-                padding: 4px 0 4px 22px;
-
-                p + p { margin-top: 14px; }
-
-                strong {
-                    color: var(--ink);
-                    font-weight: 700;
-                }
-            }
-
-            .facts-card {
-                background: var(--ink-black);
-                border: 1px solid var(--rule);
-                border-radius: 14px;
-                padding: 6px 24px;
-
-                .fact {
-                    display: grid;
-                    grid-template-columns: 130px 1fr;
-                    gap: 18px;
-
-                    padding: 16px 0;
-
-                    border-bottom: 1px solid var(--rule);
-
-                    &:last-child { border-bottom: 0; }
-
-                    dt {
-                        font-family: var(--mono);
-                        font-size: 11px;
-                        letter-spacing: 0.14em;
-                        text-transform: uppercase;
-
-                        color: var(--ink-dim);
-                    }
-
-                    dd {
-                        margin: 0;
-
-                        color: var(--ink);
-
-                        font-size: 15px;
-                        line-height: 1.45;
-
-                        a {
-                            text-decoration: none;
-                            border-bottom: 1px solid var(--rule);
-
-                            &:hover {
-                                border-bottom-color: var(--accent);
-                            }
-                        }
-
-                        .price-pill {
-                            display: inline-block;
-
-                            background: var(--accent);
-                            color: var(--tar);
-
-                            padding: 1px 8px;
-                            border-radius: 3px;
-
-                            font-family: var(--mono);
-                            font-size: 12px;
-                            font-weight: 700;
-                        }
-                    }
-                }
-            }
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-
-            @media screen and (max-width: 480px) {
-                grid-template-columns: 1fr;
-            }
-
-            .card {
-                background: var(--ink-black);
-                border: 1px solid var(--rule);
-                border-radius: 16px;
-                padding: 28px;
-
-                /* display: grid; */
-                /* grid-template-rows: auto auto 1fr; */
-                /* gap: 0; */
-
-                transition: border-color var(--instant), transform var(--instant);
-
-                &:hover {
-                    border-color: var(--accent);
-                    transform: translateY(-2px);
-                }
-
-                span {
-                    display: inline-block;
-                    font-family: var(--mono);
-                    font-size: 10px;
-                    letter-spacing: 0.14em;
-                    text-transform: uppercase;
-                    padding: 3px 8px;
-                    border-radius: 3px;
-
-                    margin-bottom: 14px;
-                    font-weight: 700;
-
-                    &.free {
-                        background: var(--rule);
-                        color: var(--ink-dim);
-                    }
-
-                    &.paid {
-                        background: var(--accent);
-                        color: var(--tar);
-                    }
-                }
-
-                h4 {
-                    font-size: 18px;
-                    margin: 0;
-                    margin-bottom: 6px;
-                }
-                p { font-size: 15px; }
-            }
-        }
-
         .iap-note {
             margin-top: 18px;
             font-size: 13px;
             color: var(--ink-dim);
             font-family: var(--mono);
             letter-spacing: 0.04em;
+        }
+    }
+
+    .block .about {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 40px;
+        align-items: start;
+
+        @media screen and (max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
+
+        .prose {
+            font-size: 18px;
+            line-height: 1.6;
+
+            color: var(--ink-dim);
+            border-left: 2px solid var(--accent);
+            padding: 4px 0 4px 22px;
+
+            p + p { margin-top: 14px; }
+
+            strong {
+                color: var(--ink);
+                font-weight: 700;
+            }
+        }
+
+        .facts-card {
+            background: var(--ink-black);
+            border: 1px solid var(--rule);
+            border-radius: 14px;
+            padding: 6px 24px;
+
+            .fact {
+                display: grid;
+                grid-template-columns: 130px 1fr;
+                gap: 18px;
+
+                @media screen and (max-width: 480px) {
+                    gap: 6px;
+                    grid-template-columns: 1fr;
+                }
+
+                padding: 16px 0;
+
+                border-bottom: 1px solid var(--rule);
+
+                &:last-child { border-bottom: 0; }
+
+                dt {
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    letter-spacing: 0.14em;
+                    text-transform: uppercase;
+
+                    color: var(--ink-dim);
+                }
+
+                dd {
+                    margin: 0;
+
+                    color: var(--ink);
+
+                    font-size: 15px;
+                    line-height: 1.45;
+
+                    a {
+                        text-decoration: none;
+                        border-bottom: 1px solid var(--rule);
+
+                        &:hover {
+                            border-bottom-color: var(--accent);
+                        }
+                    }
+
+                    .price-pill {
+                        display: inline-block;
+
+                        background: var(--accent);
+                        color: var(--tar);
+
+                        padding: 1px 8px;
+                        border-radius: 3px;
+
+                        font-family: var(--mono);
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .block .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @media screen and (max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
+
+        .card {
+            background: var(--ink-black);
+            border: 1px solid var(--rule);
+            border-radius: 16px;
+            padding: 28px;
+
+            /* display: grid; */
+            /* grid-template-rows: auto auto 1fr; */
+            /* gap: 0; */
+
+            transition: border-color var(--instant), transform var(--instant);
+
+            &:hover {
+                border-color: var(--accent);
+                transform: translateY(-2px);
+            }
+
+            span {
+                display: inline-block;
+                font-family: var(--mono);
+                font-size: 10px;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+                padding: 3px 8px;
+                border-radius: 3px;
+
+                margin-bottom: 14px;
+                font-weight: 700;
+
+                &.free {
+                    background: var(--rule);
+                    color: var(--ink-dim);
+                }
+
+                &.paid {
+                    background: var(--accent);
+                    color: var(--tar);
+                }
+            }
+
+            h4 {
+                font-size: 18px;
+                margin: 0;
+                margin-bottom: 6px;
+            }
+            p { font-size: 15px; }
         }
     }
 
@@ -364,6 +390,10 @@ main.press {
                 font-weight: 700;
 
                 cursor: pointer;
+
+                @media screen and (max-width: 480px) {
+                    padding: 12px 3px;
+                }
 
                 &:hover {
                     color: var(--ink);
@@ -394,7 +424,7 @@ main.press {
 
             .download-all {
                 margin-left: auto;
-                display: inline-flex;
+                display: none;/*inline-flex;*/
                 align-items: center;
                 gap: 8px;
 
@@ -453,6 +483,10 @@ main.press {
                     .shot .thumb {
                         aspect-ratio: 1;
                     }
+                }
+
+                @media screen and (max-width: 480px) {
+                    grid-template-columns: 1fr !important;
                 }
 
                 .shot {
@@ -528,6 +562,10 @@ main.press {
         border: 1px solid var(--paper-rule);
 
         position: relative;
+
+        @media screen and (max-width: 480px) {
+            padding: 64px 16px;
+        }
 
         .info {
             position: absolute;
@@ -617,6 +655,10 @@ main.press {
         grid-template-columns: 1fr auto;
         gap: 24px;
         align-items: center;
+
+        @media screen and (max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
 
         h3 {
             font-size: 22px;
