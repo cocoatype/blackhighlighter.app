@@ -1,35 +1,48 @@
 @charset "UTF-8";
 
-@import 'helpers/aleo-webfont.css';
-@import 'helpers/color.css';
-@import 'helpers/footer.css';
-@import 'helpers/header.css';
-@import 'helpers/index.css';
-@import 'helpers/mixins.css';
-@import 'helpers/page.css';
-@import 'helpers/press.css';
-@import 'helpers/type.css';
+@import 'styles/colors.css';
+@import 'styles/durations.css';
+@import 'styles/fonts.css';
 
-html {
-    background-color: var(--background);
-    color: var(--text);
-    font-family: 'Aleo', 'Times New Roman', serif;
-    font-size: 18px;
+@import 'styles/footer.css';
+@import 'styles/header.css';
 
-    -webkit-font-smoothing: antialiased;
+@import 'styles/list.css';
+@import 'styles/single.css';
+@import 'styles/press.css';
+@import 'styles/landing/main.css';
+
+* {
+    box-sizing: border-box;
+
+    &::selection {
+        background: var(--pitch);
+        color: var(--pitch);
+    }
 }
 
-html, body {
-    margin: 0;
+html {
+    background-color: var(--tar);
+    color: var(--ink);
 
-    max-width: --phone(100%, initial);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.55;
+
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
-    align-items: --phone(flex-start, center);
-    min-height: 100dvh;
-    width: --phone(100vw, initial);
 }
 
+main {
+    flex: 1;
+}
