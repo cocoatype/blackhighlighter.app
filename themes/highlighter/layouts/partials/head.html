@@ -18,7 +18,9 @@
     <meta name="title" content="{{ $pageTitle }}">
 
     {{ $pageDescription := "" }}
-    {{ if .Params.summary }}
+    {{ if .Description }}
+        {{ $pageDescription = .Description }}
+    {{ else if .Params.summary }}
         {{ $pageDescription = .Params.summary }}
     {{ else if .Site.Params.Description }}
         {{ $pageDescription = .Site.Params.Description }}

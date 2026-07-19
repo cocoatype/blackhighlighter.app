@@ -1,10 +1,12 @@
 {{ define "main" }}
-    <article class="post">
-        <div class="post-header">
-            <h1 class="post-title">{{ .Title }}</h1>
-        </div>
-        <div class="post-content">
-            {{ .Content }}
-        </div>
-    </article>
+{{- partial "site-header.html" . -}}
+<main class="single">
+  <h1>{{ .Title }}</h1>
+  {{ if (not .Date.IsZero) }}
+  <p class="date">{{ dateFormat "January 2, 2006" .Date }}</p>
+  {{ end }}
+  <article>
+    {{ .Content }}
+  </article>
+</main>
 {{ end }}
