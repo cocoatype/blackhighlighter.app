@@ -1,5 +1,5 @@
 .eyebrow {
-    display: inline-block;
+    display: none;
 
     font-family: var(--mono);
     font-size: 12px;
