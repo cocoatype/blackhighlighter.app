@@ -37,6 +37,10 @@ header.header {
 
     &.landing nav {
         margin-left: 12px;
+
+        @media screen and (max-width: 760px) {
+            display: none;
+        }
     }
 
     &.site nav {
