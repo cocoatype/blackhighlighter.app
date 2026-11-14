@@ -32,11 +32,6 @@ main.landing {
 
                 transition: border-color var(--instant), transform var(--instant);
 
-                &:hover {
-                    border-color: var(--accent);
-                    transform: translateY(-2px);
-                }
-
                 span {
                     display: block;
                     font-family: var(--mono);
