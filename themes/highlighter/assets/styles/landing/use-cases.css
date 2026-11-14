@@ -33,11 +33,6 @@ main.landing {
                 padding: 22px;
                 transition: border-color var(--instant), transform var(--instant);
 
-                &:hover {
-                    transform: translateY(-2px);
-                    border-color: var(--accent);
-                }
-
                 .icon {
                     font-size: 24px;
                     margin-bottom: 10px;

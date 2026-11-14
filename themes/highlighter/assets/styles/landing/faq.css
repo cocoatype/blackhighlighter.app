@@ -25,6 +25,10 @@ main.landing {
                 background: var(--ink-black);
                 overflow: hidden;
 
+                &:hover {
+                    border-color: rgb(from var(--accent) r g b / 0.2);
+                }
+
                 summary {
                     background: transparent;
                     color: var(--ink-bright);
