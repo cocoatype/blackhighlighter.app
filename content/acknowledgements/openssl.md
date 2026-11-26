@@ -2,9 +2,9 @@
 title: "OpenSSL"
 ---
 
-## License
-
 Black Highlighter uses the [OpenSSL cryptography library](https://www.openssl.org) to verify the validity of signed in-app purchases. 
+
+<!--more-->
 
 ```
 The OpenSSL toolkit stays under a double license, i.e. both the conditions of the OpenSSL License and the original SSLeay license apply to the toolkit.

@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{- partial "site-header.html" . -}}
+<main class="list">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Summary }}</p>
+  <ul>
+    {{ range .Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <div class="spacer"></div>
+      <div class="summary">
+        {{ if and (isset .Params "summary") (ne .Params.Summary "") }}
+        <p>{{ .Params.Summary | markdownify }}</p>
+        {{ else }}
+        {{ .Summary }}
+        {{ end }}
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}
