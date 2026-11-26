@@ -4,6 +4,8 @@ title: "Introspect"
 
 Black Highlighter uses the [Introspect for SwiftUI library](https://github.com/siteline/SwiftUI-Introspect) to build several user interface elements, most notably in app settings.
 
+<!--more-->
+
 ## License
 
 ```

@@ -4,6 +4,8 @@ title: "PerformanceBezier"
 
 Black Highlighter uses the PerformanceBezier library as part of the ClippingBezier library. Both libraries ultimately power the eraser tool. The [PerformanceBezier library](https://github.com/adamwulf/PerformanceBezier) was created by [Adam Wulf for Loose Leaf app](https://getlooseleaf.com/opensource/).
 
+<!--more-->
+
 ## License
 
 ```

@@ -5,6 +5,8 @@ date: "2021-04-17"
 
 Black Highlighter uses the ClippingBezier library to power the eraser tool. You can find ClippingBezier [on GitHub](https://github.com/adamwulf/ClippingBezier/).
 
+<!--more-->
+
 ## License
 
 ```
